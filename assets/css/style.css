@@ -6024,8 +6024,9 @@ nav.navbar.navbar-fixed ul.nav.navbar-nav > li.dropdown .dropdown-menu .dropdown
 }
 .navbar-fixed.headroom--not-top {
   background-color: #000000;
-  background-color: rgba(245, 193, 145);
-  transition: linear .5s;
+  background-color: #fec84e;
+background-image: linear-gradient(315deg, #fec84e 0%, #ffdea8 74%);
+transition: linear .5s;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -6067,7 +6068,8 @@ nav.navbar.navbar-fixed ul.nav.navbar-nav > li.dropdown .dropdown-menu .dropdown
   z-index: 9000;
 }
 .ct-navbarMobile.ct-navbarMobile--inverse {
-  background-color: #333333;
+  background-color: #fec84e;
+background-image: linear-gradient(315deg, #fec84e 0%, #ffdea8 74%);
   color: #ffffff;
 }
 .ct-navbarMobile .navbar-brand {
@@ -8768,7 +8770,7 @@ header .ct-sectionHeader.ct-sectionHeader--type1 .ct-sectionHeader-title:before 
   width: 60px;
   height: 60px;
   line-height: 58px;
-  color: #747a6e;
+  color: #ffffff;
   font-size: 24px;
   border-top: solid 1px #747a6e;
   border-left: solid 1px #747a6e;
