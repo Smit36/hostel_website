@@ -6024,7 +6024,7 @@ nav.navbar.navbar-fixed ul.nav.navbar-nav > li.dropdown .dropdown-menu .dropdown
 }
 .navbar-fixed.headroom--not-top {
   background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(245, 193, 145);
   transition: linear .5s;
   padding-top: 15px;
   padding-bottom: 15px;
