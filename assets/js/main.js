@@ -18,6 +18,24 @@ var $xsWidth = 479;
 /* ========================== */
 /* ==== HELPER FUNCTIONS ==== */
 
+/*  Scroll to top button */
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+
 function validatedata($attr, $defaultValue) {
   if ($attr !== undefined) {
     return $attr;
