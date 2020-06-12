@@ -107,6 +107,7 @@ Last change:	27 August 2015
   border: none;
   outline: none;
   padding: 12px 16px;
+  color: white;
   background-color:#f77345;
   cursor: pointer;
 }
