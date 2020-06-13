@@ -55,13 +55,13 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-var header = document.getElementById("myGallery");
-var btns = header.getElementsByClassName("gallery-btn");
+var header = document.getElementById('myGallery');
+var btns = header.getElementsByClassName('gallery-btn');
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].classList.remove('active');
-  this.className += " active";
+  btns[i].addEventListener('click', function () {
+    var current = document.getElementsByClassName('active');
+    current[0].className = current[0].classList.remove('active');
+    this.className += ' active';
   });
 }
 
