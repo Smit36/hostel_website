@@ -5747,7 +5747,7 @@ Copyright (c) 2015 Daniel Eden
   padding-left: 15px;
 }
 .navbar .navbar-header .navbar-brand figcaption .navbar-brand-name {
-  color: #666666;
+  color: #f76f00;
   font-size: 35px;
   font-weight: 300;
   text-transform: uppercase;
@@ -5990,7 +5990,7 @@ nav.navbar.navbar-fixed
   padding-bottom: 15px;
 }
 .navbar.navbar--option2 .navbar-header .navbar-brand figcaption .navbar-brand-name {
-  color: #ffffff;
+  color: #f76f00;
 }
 .navbar.navbar--option2 .navbar-header .navbar-brand figcaption .navbar-brand-description {
   color: #c9c9c9;
@@ -6050,7 +6050,7 @@ nav.navbar.navbar-fixed
   position: relative;
 }
 .ct-navbarMobile .navbar-brand figure figcaption .navbar-brand-name {
-  color: #ffffff;
+  color: #f76f00;
   font-size: 24px;
   margin: 0;
 }
