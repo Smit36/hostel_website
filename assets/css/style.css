@@ -64,18 +64,6 @@ Last change:	27 August 2015
 @import url('http://fonts.googleapis.com/css?family=Varela+Round');
 @import '../fonts/fontello/css/fontello.css';
 @import '../js/datetime-picker/css/bootstrap-datepicker3.css';
-@import url(
-  https://fonts.googleapis.com/css?family=Rubik:300,
-  300i,
-  400,
-  400i,
-  500,
-  500i,
-  700,
-  700i,
-  900,
-  900i&display=swap
-);
 
 /*--For Gallery--*/
 
@@ -115,10 +103,10 @@ Last change:	27 August 2015
 }
 
 #section8 {
-  font-family: Rubik;
+  font-family: 'Source Sans Pro';
 }
 .display-1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 4.25rem;
   font-display: swap;
 }
@@ -126,7 +114,7 @@ Last change:	27 August 2015
   font-size: 6.8rem;
 }
 .display-2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 3rem;
   font-display: swap;
 }
@@ -134,7 +122,7 @@ Last change:	27 August 2015
   font-size: 4.8rem;
 }
 .display-4 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   font-display: swap;
 }
@@ -142,7 +130,7 @@ Last change:	27 August 2015
   font-size: 1.6rem;
 }
 .display-5 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5rem;
   font-display: swap;
 }
@@ -150,8 +138,8 @@ Last change:	27 August 2015
   font-size: 2.4rem;
 }
 .display-8 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4rem;
   font-display: swap;
 }
 .display-8 > .mbr-iconfont {
