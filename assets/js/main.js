@@ -18,7 +18,7 @@ var $xsWidth = 479;
 /* ========================== */
 /* ==== HELPER FUNCTIONS ==== */
 
-filterSelection('ce');
+filterSelection('rm');
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName('column');
