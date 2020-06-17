@@ -8742,10 +8742,10 @@ header .ct-sectionHeader.ct-sectionHeader--type1 .ct-sectionHeader-title:before 
   line-height: 58px;
   color: #ffffff;
   font-size: 24px;
-  border-top: solid 1px #747a6e;
-  border-left: solid 1px #747a6e;
-  border-right: solid 1px #747a6e;
-  border-bottom: solid 1px #747a6e;
+  border-top: solid 1px #ffffff;
+  border-left: solid 1px #ffffff;
+  border-right: solid 1px #ffffff;
+  border-bottom: solid 1px #ffffff;
   border-width: 2px;
   border-radius: 50%;
 }
@@ -9453,7 +9453,7 @@ header .ct-sectionHeader.ct-sectionHeader--type1 .ct-sectionHeader-title:before 
 }
 .ct-slick.ct-slick-arrows--type2 .slick-prev:before,
 .ct-slick.ct-slick-arrows--type2 .slick-next:before {
-  color: #797979;
+  color: #ffffff;
   font-size: 13px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -9489,15 +9489,15 @@ header .ct-sectionHeader.ct-sectionHeader--type1 .ct-sectionHeader-title:before 
 }
 .ct-slick.ct-slick-arrows--type3 .slick-prev:hover,
 .ct-slick.ct-slick-arrows--type3 .slick-next:hover {
-  border-color: #959494;
+  border-color: #ffffff;
 }
 .ct-slick.ct-slick-arrows--type3 .slick-prev:hover:before,
 .ct-slick.ct-slick-arrows--type3 .slick-next:hover:before {
-  color: #959494;
+  color: #ffffff;
 }
 .ct-slick.ct-slick-arrows--type3 .slick-prev:before,
 .ct-slick.ct-slick-arrows--type3 .slick-next:before {
-  color: #dfdfdf;
+  color: #ffffff;
   font-size: 13px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
