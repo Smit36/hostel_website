@@ -11,21 +11,8 @@ var firebaseConfig = {
 
   function enquiry_form(){
       firebase.database().ref("enquiry").push({
-          firstname:document.getElementById("firstname").value,          
-          middlename:document.getElementById("middlename").value,
-          lastname:document.getElementById("lastname").value,
-          email:document.getElementById("email").value,
+          firstname:document.getElementById("firstname").value,         
           contact_no:document.getElementById("contact_no").value,
-          father_contact:document.getElementById("father_contact").value,
-          address:document.getElementById("address").value,
-          city:document.getElementById("city").value,
-          district:document.getElementById("district").value,
-          state:document.getElementById("state").value,          
-          course:document.getElementById("course").value,
-          institute:document.getElementById("institute").value,
-          year:document.getElementById("year").value,          
-          last_result:document.getElementById("last_result").value,
-          last_institute:document.getElementById("last_institute").value,          
-          reference:document.getElementById("reference").value,
+          father_contact:document.getElementById("father_contact").value,          
       })
   }
