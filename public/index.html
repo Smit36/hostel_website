@@ -10,16 +10,16 @@
 
 
 <head lang="en">
-    <meta charset="UTF-8"/>
-    <meta name="description" content="Atmiya Vidya Dham- Redifining Youth"/>
-    <meta name="author" content="CreateIT"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Atmiya Vidya Dham- Redifining Youth" />
+    <meta name="author" content="CreateIT" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <link rel="shortcut icon" href="logo.png"/>
-    <link rel="apple-touch-icon" href="logo.png"/>
+    <link rel="shortcut icon" href="logo.png" />
+    <link rel="apple-touch-icon" href="logo.png" />
 
-    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="telephone=no" />
     <title>AVD</title>
 
 
@@ -27,8 +27,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
 
     <!--[if lt IE 9]>
@@ -42,1404 +42,1459 @@
 </head>
 
 <body class="cssAnimate ct-headroom--fixedMenu onepager onepagertype">
-<!-- Preloader -->
-<div id="preloader">
-    <span class="loader" data-loading-text="LOADING"></span>
-</div>
-
-<div class="ct-menuMobile">
-    <ul class="ct-menuMobile-navbar">
-        <li><a href="#section1" class="ct-js-btnScroll--mobile">Home</a></li>
-        <li><a href="#section2" class="ct-js-btnScroll--mobile">Info</a></li>
-        <li><a href="#section3" class="ct-js-btnScroll--mobile">Rooms</a></li>
-        <li><a href="#section4" class="ct-js-btnScroll--mobile">Arrival</a></li>
-        <li><a href="#section7" class="ct-js-btnScroll--mobile">Gallery</a></li>
-        <li><a href="#section8" class="ct-js-btnScroll--mobile">Reviews</a></li>
-        <li><a href="#section9" class="ct-js-btnScroll--mobile">Contact us</a></li>
-    </ul>
-</div>
-
-<div id="ct-js-wrapper" class="ct-pageWrapper">
-    <div class="ct-navbarMobile ct-navbarMobile--inverse">
-        <a class="navbar-brand" href="#section1">
-            <figure>
-                <img src="assets/images/demo-content/logo.png" alt="Logo"/>
-                <figcaption>
-                    <h2 class="navbar-brand-name">
-                        Atmiya Vidya Dham </h2>
-
-                </figcaption>
-            </figure>
-        </a>
-        <button type="button" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+    <!-- Preloader -->
+    <div id="preloader">
+        <span class="loader" data-loading-text="LOADING"></span>
     </div>
 
-    <!-- Desktop navbar -->
-    <nav class="navbar navbar-fixed navbar--option2" data-startnavbar="0">
+    <div class="ct-menuMobile">
+        <ul class="ct-menuMobile-navbar">
+            <li><a href="#section1" class="ct-js-btnScroll--mobile">Home</a></li>
+            <li><a href="#section2" class="ct-js-btnScroll--mobile">Info</a></li>
+            <li><a href="#section3" class="ct-js-btnScroll--mobile">Rooms</a></li>
+            <li><a href="#section4" class="ct-js-btnScroll--mobile">Arrival</a></li>
+            <li><a href="#section7" class="ct-js-btnScroll--mobile">Gallery</a></li>
+            <li><a href="#section8" class="ct-js-btnScroll--mobile">Reviews</a></li>
+            <li><a href="#section9" class="ct-js-btnScroll--mobile">Contact us</a></li>
+        </ul>
+    </div>
 
-        <div class="row" style="padding: 0px 20px 0px 20px;">
-            <div class="col-sm-12">
-                <div class="collapse navbar-collapse">
-                    <div class="navbar-header">
-                        <a class="navbar-brand ct-js-btnScroll" href="#section1">
-                            <figure>
-                                <img src="assets/images/demo-content/logo.png" alt="Logo"/>
-                                <figcaption>
-                                    <h2 class="navbar-brand-name">
-                                        <span class="ct-u-colorMotive ct-fw-200"></span>Atmiya Vidya Dham
-                                    </h2>
-                                    <span class="navbar-brand-description"></span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <ul class="nav navbar-nav navbar-right ct-navbar--fadeInUp" role="menu">
-                        <li class="onepage">
-                            <a href="#section1"><span class="active-link"><i
-                                    class="icon-right-small"></i></span>Home</a>
-                        </li>
-                        <li class="onepage">
-                            <a href="#section2"><span class="active-link"><i
-                                    class="icon-right-small"></i></span>Info</a>
-                        </li>
-                        <li class="onepage">
-                            <a href="#section3"><span class="active-link"><i
-                                    class="icon-right-small"></i></span>Rooms</a>
-                        </li>
-                        <li class="onepage">
-                            <a href="#section4"><span class="active-link"><i class="icon-right-small"></i></span>Arrival</a>
-                        </li>
-                        <li class="onepage">
-                            <a href="#section7"><span class="active-link"><i class="icon-right-small"></i></span>Gallery</a>
-                        </li>
-                        <li class="onepage">
-                            <a href="#section8"><span class="active-link"><i class="icon-right-small"></i></span>Reviews</a>
-                        </li>
-                        <li class="onepage">
-                            <a href="#section9"><span class="active-link"><i class="icon-right-small"></i></span>Contact
-                                us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div id="ct-js-wrapper" class="ct-pageWrapper">
+        <div class="ct-navbarMobile ct-navbarMobile--inverse">
+            <a class="navbar-brand" href="#section1">
+                <figure>
+                    <img src="assets/images/demo-content/logo.png" alt="Logo" />
+                    <figcaption>
+                        <h2 class="navbar-brand-name">
+                            Atmiya Vidya Dham</h2>
+                    </figcaption>
+                </figure>
+            </a>
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
 
-    </nav>
+        <!-- Desktop navbar -->
+        <nav class="navbar navbar-fixed navbar--option2" data-startnavbar="0">
 
-    <div id="section1"
-         class="ct-js-slick ct-slick ct-slick-dots--type3 ct-slick-dots--11 ct-slick--table section mobile-fullHeight"
-         data-height="750" data-LGitems="1" data-MDitems="1" data-SMitems="1" data-XSitems="1"
-         data-adaptiveHeight="true"
-         data-dots="true" data-arrows="false">
-        <div class="item">
-            <div class="vimeo-wrapper">
-                <iframe id="vimeo_player"
+            <div class="row" style="padding: 0px 20px 0px 20px;">
+                <div class="col-sm-12">
+                    <div class="collapse navbar-collapse">
+                        <div class="navbar-header">
+                            <a class="navbar-brand ct-js-btnScroll" href="#section1">
+                                <figure>
+                                    <img src="assets/images/demo-content/logo.png" alt="Logo" />
+                                    <figcaption>
+                                        <h2 class="navbar-brand-name">
+                                            <span class="ct-u-colorMotive ct-fw-200"></span>Atmiya Vidya Dham
+                                        </h2>
+                                        <span class="navbar-brand-description"></span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right ct-navbar--fadeInUp" role="menu">
+                            <li class="onepage">
+                                <a href="#section1"><span class="active-link"><i
+                                            class="icon-right-small"></i></span>Home</a>
+                            </li>
+                            <li class="onepage">
+                                <a href="#section2"><span class="active-link"><i
+                                            class="icon-right-small"></i></span>Info</a>
+                            </li>
+                            <li class="onepage">
+                                <a href="#section3"><span class="active-link"><i
+                                            class="icon-right-small"></i></span>Rooms</a>
+                            </li>
+                            <li class="onepage">
+                                <a href="#section4"><span class="active-link"><i
+                                            class="icon-right-small"></i></span>Arrival</a>
+                            </li>
+                            <li class="onepage">
+                                <a href="#section7"><span class="active-link"><i
+                                            class="icon-right-small"></i></span>Gallery</a>
+                            </li>
+                            <li class="onepage">
+                                <a href="#section8"><span class="active-link"><i
+                                            class="icon-right-small"></i></span>Reviews</a>
+                            </li>
+                            <li class="onepage">
+                                <a href="#section9"><span class="active-link"><i
+                                            class="icon-right-small"></i></span>Contact
+                                    us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <div id="section1"
+            class="ct-js-slick ct-slick ct-slick-dots--type3 ct-slick-dots--11 ct-slick--table section mobile-fullHeight"
+            data-height="750" data-LGitems="1" data-MDitems="1" data-SMitems="1" data-XSitems="1"
+            data-adaptiveHeight="true" data-dots="true" data-arrows="false">
+            <div class="item">
+                <div class="vimeo-wrapper">
+                    <iframe id="vimeo_player"
                         src="https://player.vimeo.com/video/428011013?autoplay=1&loop=1&color=ff0179&title=0&byline=0&portrait=0&muted=1"
                         frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                <script src="https://player.vimeo.com/api/player.js"></script>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+                <!-- [1] -->
+                <div class="item-inner" data-vertical="middle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                <h1 class="ct-u-size50 ct-fw-700 text-uppercase ct-u-colorWhite ct-ff-openSans animated"
+                                    data-fx="fadeInUp">
+                                    Atmiya Vidya Dham<small
+                                        class="ct-u-size38 ct-fw-300 ct-u-colorWhite ct-ff-openSans ">Redifining
+                                        Youth
+                                    </small>
+                                </h1>
+                                <p class="lead ct-u-colorWhite ct-u-paddingTop30 animated" data-fx="fadeInDown">
+                                    Developed in the laps of nature, AVD is the epitome of the education system that has
+                                    diverse youth
+                                    from across the country studying in various colleges.
+                                    It is not just a hostel but a platform to instill cultural and moral values along
+                                    with
+                                    providing
+                                    environment for academic proficiency.
+                                    To make students learn from the best mentors and fostering a harmonious atmosphere
+                                    is
+                                    what we
+                                    constantly strive for.
+                                </p>
+                                <a href="#section9"
+                                    class="btn btn-primary ct-u-marginBottom30 ct-u-marginTop40 ct-js-btnScroll animated"
+                                    data-fx="bounceIn" data-time="1000"><strong>enquiry</strong> now<span><i
+                                            class="icon-right-small"></i></span></a>
+                            </div>
+                            <div class="col-md-8 col-md-offset-4 col-lg-6 col-lg-offset-0">
+                                <img src="assets/images/demo-content/swamiji.png" alt="Image"
+                                    class="ct-u-absolute animated hidden-xs" data-fx="fadeInRight" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- [1] -->
-            <div class="item-inner" data-vertical="middle">
+
+        </div>
+
+        <section id="section2" class="ct-u-paddingTop90 ct-u-paddingBottom40 section" data-background="#ffffff">
+            <center>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 col-lg-6">
-                            <h1 class="ct-u-size50 ct-fw-700 text-uppercase ct-u-colorWhite ct-ff-openSans animated"
-                                data-fx="fadeInUp">
-                                Atmiya Vidya Dham<small class="ct-u-size38 ct-fw-300 ct-u-colorWhite ct-ff-openSans ">Redifining
-                                Youth
-                            </small>
-                            </h1>
-                            <p class="lead ct-u-colorWhite ct-u-paddingTop30 animated" data-fx="fadeInDown">
-                                Developed in the laps of nature, AVD is the epitome of the education system that has
-                                diverse youth
-                                from across the country studying in various colleges.
-                                It is not just a hostel but a platform to instill cultural and moral values along with
-                                providing
-                                environment for academic proficiency.
-                                To make students learn from the best mentors and fostering a harmonious atmosphere is
-                                what we
-                                constantly strive for.
-                            </p>
-                            <a href="#section9"
-                               class="btn btn-primary ct-u-marginBottom30 ct-u-marginTop40 ct-js-btnScroll animated"
-                               data-fx="bounceIn" data-time="1000"><strong>enquiry</strong> now<span><i
-                                    class="icon-right-small"></i></span></a>
-                        </div>
-                        <div class="col-md-8 col-md-offset-4 col-lg-6 col-lg-offset-0">
-                            <img src="assets/images/demo-content/swamiji.png" alt="Image"
-                                 class="ct-u-absolute animated hidden-xs"
-                                 data-fx="fadeInRight"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <section id="section2" class="ct-u-paddingTop90 ct-u-paddingBottom40 section" data-background="#ffffff">
-        <center>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="ct-iconBox ct-iconBox--type2 ct-iconBox--motive ct-u-marginBottom50">
-                <span class="ct-iconBox-icon">
-                  <i class="icons8-map-marker"></i>
-                </span>
-                            <h3 class="ct-iconBox-title text-uppercase">
-                                Map &<br/>
-                                DIRECTIONS
-                            </h3>
-                            <p class="ct-iconBox-description">
-                                Situated in the outskirts of Vallabh Vidhyanagar near the Bakrol gate, the AVD campus is
-                                known for
-                                it's visible and inherent beauty. Approx every education institutes are few Km's away
-                                from this
-                                beautiful campus. It is easy for a commuter to reach here with different means of
-                                transportation
-                                available.
-                            </p>
-                            <a href="#section7"
-                               class="btn btn-primary ct-u-marginBottom30 ct-u-marginTop40 ct-js-btnScroll animated"
-                               data-fx="bounceIn" data-time="1000"><strong>learn</strong> more</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="ct-iconBox ct-iconBox--type2 ct-iconBox--motive ct-u-marginBottom50">
-                <span class="ct-iconBox-icon">
-                  <i class="icons8-crown-filled"></i>
-                </span>
-                            <h3 class="ct-iconBox-title text-uppercase">
-                                Services &<br/>
-                                Accomodations
-                            </h3>
-                            <p class="ct-iconBox-description">
-                                We always try to provide the best and suitable facilities for our students. 24*7 Basic
-                                Medical help,
-                                Regular rooms cleaning, Green campus, healthy environment, quality food, access to
-                                sports resources,
-                                TV room, Study room, and much more.
-                                <br/>
-                                <br/>
-                            </p>
-                            <a href="#section3"
-                               class="btn btn-primary ct-u-marginBottom30 ct-u-marginTop40 ct-js-btnScroll animated"
-                               data-fx="bounceIn" data-time="1000"><strong>learn</strong> more</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="ct-iconBox ct-iconBox--type2 ct-iconBox--motive ct-u-marginBottom50">
-                <span class="ct-iconBox-icon">
-                  <i class="icons8-museum-filled"></i>
-                </span>
-                            <h3 class="ct-iconBox-title text-uppercase">
-                                great<br/>
-                                highlights
-                            </h3>
-                            <p class="ct-iconBox-description">
-                                We always try to create a friendly environment for students. Various sports tournaments
-                                are organized
-                                every year including Sports day. We always try to induce new and interesting events that
-                                everyone can
-                                participate in and cherish every single moment. Stage event, Drama are a few of the
-                                highlights.
-                            </p>
-                            <a href="#section7"
-                               class="btn btn-primary ct-u-marginBottom30 ct-u-marginTop40 ct-js-btnScroll animated"
-                               data-fx="bounceIn" data-time="1000"><strong>learn</strong> more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </center>
-    </section>
-    <div class="ct-js-slick ct-slick ct-slick-dots--type3 ct-slick-dots--11 ct-slick--table  mobile-fullHeight"
-         data-height="804" data-LGitems="1" data-MDitems="1" data-SMitems="1" data-XSitems="1"
-         data-adaptiveHeight="true"
-         data-dots="true" data-arrows="false">
-        <div class="item" style="background-image: url(assets/images/hostel.jpg); background-size:cover">
-            <!-- [1] -->
-
-            <div class="item-inner" data-vertical="middle">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6">
-                            <h1 class="ct-u-size70 ct-fw-700 text-uppercase ct-u-colorWhite ct-ff-openSans animated"
-                                data-fx="fadeInUp">
-                                Hari Saurabh Hostel<small
-                                    class="ct-u-size48 ct-fw-300 ct-u-colorWhite ct-ff-openSans text-lowercase">A Home
-                                Away from
-                                Home</small>
-                            </h1>
-                            <p class="lead ct-u-colorWhite ct-u-paddingTop30 animated" data-fx="fadeInDown">
-                                A student is always an empty shell without a pure heart. Along with studies what good he
-                                imbibes in
-                                his life helps to shapes a better future for him. We with the blessings of our Guru
-                                always try to
-                                impart brotherhood, humanity, love, and discipline in our students which are the sole
-                                practices an
-                                Indian culture is known for.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="item"
-             style="background-image: url(assets/images/temple.jpg); background-size:cover; height:auto; max-width:100%">
-            <!-- [1] -->
-            <div class="item-inner" data-vertical="middle">
-
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-12 col-lg-6">
-                            <h1 class="ct-u-size70 ct-fw-700 text-uppercase  ct-ff-openSans animated" data-fx="fadeInUp"
-                                style="color:  #ee852e; text-shadow: 100px;">
-                                Temple<small class="ct-u-size48 ct-fw-300  ct-ff-openSans text-lowercase"
-                                             style="color: white;">
-                                Where
-                                Peace
-                                Prevails</small>
-                            </h1>
-                            <p class="lead  ct-u-paddingTop30 animated" data-fx="fadeInDown" style="color: white;">
-                                A place of cool stone, beauty, shafting sunlight, warmth, and satisfaction where every
-                                heart flashes
-                                purity is what a temple implies. With the blessings of Lord Swaminarayan, AVD campus
-                                comprises of a
-                                beautiful temple with enormous devotees stepping in for peace and positivity.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item" data-bg="assets/images/sabha.jpg" data-background-size="cover">
-            <!-- [1] -->
-            <div class="item-inner" data-vertical="middle">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6">
-                            <h1 class="ct-u-size70 ct-fw-700 text-uppercase ct-u-colorWhite ct-ff-openSans animated"
-                                data-fx="fadeInUp">
-                                Prayer Hall<small
-                                    class="ct-u-size48 ct-fw-300 ct-u-colorWhite ct-ff-openSans text-lowercase">Togetherness
-                                is half
-                                success
-                            </small>
-                            </h1>
-                            <p class="lead ct-u-colorWhite ct-u-paddingTop30 animated" data-fx="fadeInDown">
-                                A large prayer hall with the capacity of 1000+ individuals is a symbol of togetherness.
-                                Prayer hall
-                                symbolizes the ancient Gurukul culture where students come together for prayers and
-                                augment positive
-                                energy in themselves. Every day in evening prayer is performed here by the students of
-                                Harisaurabh
-                                Hostel. Also, various stage events and Sabha are organized at this place.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="ct-mediaSection ct-u-displayBlock" data-type="kenburns" data-height="640"
-             data-background-mobile="./assets/images/demo-content/media_section.jpg">
-        <div class="ct-mediaSection-kenburns">
-            <img src="assets/images/demo-content/media_section.jpg" alt="Image"/>
-        </div>
-        <div class="text-center ct-u-paddingTop90">
-            <div class="container">
-                <div class="ct-sectionHeader ct-sectionHeader--type1 text-center ct-u-marginBottom90">
-                    <h3 class="ct-sectionHeader-title text-uppercase ct-u-colorWhite">Amenities</h3>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div
-                                class="ct-js-slick ct-slick ct-slick-arrows--type3 ct-slick-arrows--position6 ct-slick-arrows--motive"
-                                data-LGitems="6" data-MDitems="4" data-SMitems="3" data-XSitems="2"
-                                data-adaptiveHeight="true"
-                                data-dots="false" data-arrows="true">
-                            <div class="item">
-                                <!-- [1] -->
-                                <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
-                                    <span class="ct-iconBox-icon"><i class="fa fa-book"></i></span>
-                                    <p class="ct-iconBox-title">Reading room</p>
-                                </div>
-                                <div class="ct-iconBox ct-iconBox--type4">
-                                    <span class="ct-iconBox-icon"><i class="fa fa-desktop"></i></span>
-                                    <p class="ct-iconBox-title">TV Room</p>
-                                </div>
+                        <div class="col-sm-4">
+                            <div class="ct-iconBox ct-iconBox--type2 ct-iconBox--motive ct-u-marginBottom50">
+                                <span class="ct-iconBox-icon">
+                                    <i class="icons8-map-marker"></i>
+                                </span>
+                                <h3 class="ct-iconBox-title text-uppercase">
+                                    Map &<br />
+                                    DIRECTIONS
+                                </h3>
+                                <p class="ct-iconBox-description">
+                                    Situated in the outskirts of Vallabh Vidhyanagar near the Bakrol gate, the AVD
+                                    campus is
+                                    known for
+                                    it's visible and inherent beauty. Approx every education institutes are few Km's
+                                    away
+                                    from this
+                                    beautiful campus. It is easy for a commuter to reach here with different means of
+                                    transportation
+                                    available.
+                                </p>
+                                <a href="#section7"
+                                    class="btn btn-primary ct-u-marginBottom30 ct-u-marginTop40 ct-js-btnScroll animated"
+                                    data-fx="bounceIn" data-time="1000"><strong>learn</strong> more</a>
                             </div>
-
-                            <div class="item">
-                                <!-- [3] -->
-                                <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
-                                    <span class="ct-iconBox-icon"><i class="fa fa-users"></i></span>
-                                    <p class="ct-iconBox-title">Hospitality</p>
-                                </div>
-                                <div class="ct-iconBox ct-iconBox--type4">
-                                    <span class="ct-iconBox-icon"><i class="fa fa-medkit"></i></span>
-                                    <p class="ct-iconBox-title">First-Aid</p>
-                                </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="ct-iconBox ct-iconBox--type2 ct-iconBox--motive ct-u-marginBottom50">
+                                <span class="ct-iconBox-icon">
+                                    <i class="icons8-crown-filled"></i>
+                                </span>
+                                <h3 class="ct-iconBox-title text-uppercase">
+                                    Services &<br />
+                                    Accomodations
+                                </h3>
+                                <p class="ct-iconBox-description">
+                                    We always try to provide the best and suitable facilities for our students. 24*7
+                                    Basic
+                                    Medical help,
+                                    Regular rooms cleaning, Green campus, healthy environment, quality food, access to
+                                    sports resources,
+                                    TV room, Study room, and much more.
+                                    <br />
+                                    <br />
+                                </p>
+                                <a href="#section3"
+                                    class="btn btn-primary ct-u-marginBottom30 ct-u-marginTop40 ct-js-btnScroll animated"
+                                    data-fx="bounceIn" data-time="1000"><strong>learn</strong> more</a>
                             </div>
-                            <div class="item">
-                                <!-- [4] -->
-                                <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
-                                    <span class="ct-iconBox-icon"><i class="fa fa-smile-o"></i></span>
-                                    <p class="ct-iconBox-title">Weekly Sabha</p>
-                                </div>
-                                <div class="ct-iconBox ct-iconBox--type4">
-                                    <span class="ct-iconBox-icon"><i class="fa fa-tint"></i></span>
-                                    <p class="ct-iconBox-title">Water Cooler</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <!-- [5] -->
-                                <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
-                                    <span class="ct-iconBox-icon"><i class="fas fa-tachometer-alt"></i></span>
-                                    <p class="ct-iconBox-title">Lift</p>
-                                </div>
-                                <div class="ct-iconBox ct-iconBox--type4">
-                                    <span class="ct-iconBox-icon"><i class="fas fa-praying-hands"></i></span>
-                                    <p class="ct-iconBox-title">Temple</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <!-- [6] -->
-                                <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
-                                    <span class="ct-iconBox-icon"><i class="fas fa-pizza-slice"></i></span>
-                                    <p class="ct-iconBox-title">Dinnig Hall</p>
-                                </div>
-                                <div class="ct-iconBox ct-iconBox--type4">
-                                    <span class="ct-iconBox-icon"><i class="fa fa-road"></i></span>
-                                    <p class="ct-iconBox-title">Free Parking</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <!-- [6] -->
-                                <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
-                                    <span class="ct-iconBox-icon"><i class="fas fa-futbol"></i></span>
-                                    <p class="ct-iconBox-title">Ground</p>
-                                </div>
-                                <div class="ct-iconBox ct-iconBox--type4">
-                                    <span class="ct-iconBox-icon"><i class="fas fa-eye"></i></span>
-                                    <p class="ct-iconBox-title">CCTV</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <!-- [7] -->
-                                <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
-                                    <span class="ct-iconBox-icon"><i class="fas fa-tshirt"></i></span>
-                                    <p class="ct-iconBox-title">Laundary</p>
-                                </div>
-                                <div class="ct-iconBox ct-iconBox--type4">
-                                    <span class="ct-iconBox-icon"><i class="fas fa-dumbbell"></i></span>
-                                    <p class="ct-iconBox-title">Gym</p>
-                                </div>
-
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="ct-iconBox ct-iconBox--type2 ct-iconBox--motive ct-u-marginBottom50">
+                                <span class="ct-iconBox-icon">
+                                    <i class="icons8-museum-filled"></i>
+                                </span>
+                                <h3 class="ct-iconBox-title text-uppercase">
+                                    great<br />
+                                    highlights
+                                </h3>
+                                <p class="ct-iconBox-description">
+                                    We always try to create a friendly environment for students. Various sports
+                                    tournaments
+                                    are organized
+                                    every year including Sports day. We always try to induce new and interesting events
+                                    that
+                                    everyone can
+                                    participate in and cherish every single moment. Stage event, Drama are a few of the
+                                    highlights.
+                                </p>
+                                <a href="#section7"
+                                    class="btn btn-primary ct-u-marginBottom30 ct-u-marginTop40 ct-js-btnScroll animated"
+                                    data-fx="bounceIn" data-time="1000"><strong>learn</strong> more</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="section3" class="ct-u-paddingTop80 section" data-background="#ffffff">
-        <div class="container">
-            <div class="ct-sectionHeader ct-sectionHeader--type1 text-center ct-u-marginBottom50">
-                <h3 class="ct-sectionHeader-title text-uppercase">our rooms</h3>
-                <p class="ct-u-paddingTop60">
-                    We offer a great list of room types so you can have a great time at our hostel.
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="ct-productBox ct-productBox--type2 ct-u-paddingBottom40">
+
+
+            </center>
+        </section>
+        <div class="ct-js-slick ct-slick ct-slick-dots--type3 ct-slick-dots--11 ct-slick--table  mobile-fullHeight"
+            data-height="804" data-LGitems="1" data-MDitems="1" data-SMitems="1" data-XSitems="1"
+            data-adaptiveHeight="true" data-dots="true" data-arrows="false">
+            <div class="item" style="background-image: url(assets/images/hostel.jpg); background-size:cover">
+                <!-- [1] -->
+
+                <div class="item-inner" data-vertical="middle">
+                    <div class="container">
                         <div class="row">
-                            <div class="col-md-8 animated" data-fx="fadeInLeft">
-
-                                <div id="myCarousel" class="carousel slide ct-u-marginBottom30 " data-ride="carousel">
-                                    <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                                    </ol>
-
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner ">
-                                        <div class="item active ">
-                                            <img src="assets/images/final_room 2.jpg" style="width: 100%;">
-                                        </div>
-
-                                        <div class="item">
-                                            <img src="assets/images/final room 4.jpg" style="width: 100%;">
-                                        </div>
-
-                                        <div class="item">
-                                            <img src="assets/images/bathroom.jpg" style="width: 100%;">
-                                        </div>
-                                        <div class="item">
-                                            <img src="assets/images/final room 3.jpg" style="width: 100%;">
-                                        </div>
-                                        <div class="item">
-                                            <img src="assets/images/final room 1.jpg" style="width: 100%;">
-                                        </div>
-                                    </div>
-
-                                    <!-- Left and right controls -->
-                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-
+                            <div class="col-md-12 col-lg-6">
+                                <h1 class="ct-u-size70 ct-fw-700 text-uppercase ct-u-colorWhite ct-ff-openSans animated"
+                                    data-fx="fadeInUp">
+                                    Hari Saurabh Hostel<small
+                                        class="ct-u-size48 ct-fw-300 ct-u-colorWhite ct-ff-openSans text-lowercase">A
+                                        Home
+                                        Away from
+                                        Home</small>
+                                </h1>
+                                <p class="lead ct-u-colorWhite ct-u-paddingTop30 animated" data-fx="fadeInDown">
+                                    A student is always an empty shell without a pure heart. Along with studies what
+                                    good he
+                                    imbibes in
+                                    his life helps to shapes a better future for him. We with the blessings of our Guru
+                                    always try to
+                                    impart brotherhood, humanity, love, and discipline in our students which are the
+                                    sole
+                                    practices an
+                                    Indian culture is known for.
+                                </p>
                             </div>
-                            <div class="col-md-4 animated" data-fx="fadeInRight">
-                                <div class="ct-productBox-content">
-                                    <div class="ct-productBox-header">
-                                        <h4 class="text-capitalize ct-productBox-title">AC Room</h4>
-                                        <p>A comfortable and quiet room with split AC.</p>
-                                        <span class="ct-hr ct-hr--type1 ct-u-marginTop20 ct-u-marginBottom20"
-                                              data-background="#f7f7f7">Line break</span>
-                                    </div>
-                                    <ul class="list-unstyled ct-list--type2 ct-list--striped ct-icon--motive ct-u-paddingTop25">
-                                        <li><i class="fas fa-check-circle"></i>Air Conditioning</li>
-                                        <li><i class="fas fa-check-circle"></i>2 Sharing room</li>
-                                        <li><i class="fas fa-check-circle"></i>Attached Bathroom</li>
-                                        <li><i class="fas fa-check-circle"></i>Personal Wardrobe & Study Table</li>
-                                        <li><i class="fas fa-check-circle"></i>Balcony</li>
-                                        <li><i class="fas fa-check-circle"></i>Laundary Bag</li>
-                                    </ul>
-                                    <a href="#section9" class="btn btn-primary ct-u-marginTop20 ct-js-btnScroll">enquiry
-                                        now</a>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
-                    <div class="ct-productBox ct-productBox--type2 ct-u-paddingBottom40">
+                </div>
+            </div>
+
+            <div class="item"
+                style="background-image: url(assets/images/temple.jpg); background-size:cover; height:auto; max-width:100%">
+                <!-- [1] -->
+                <div class="item-inner" data-vertical="middle">
+
+                    <div class="container">
                         <div class="row">
-                            <div class="col-md-8 animated" data-fx="fadeInLeft">
-                                <div id="myCarousel1" class="carousel slide ct-u-marginBottom30 " data-ride="carousel">
-                                    <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel1" data-slide-to="1"></li>
-                                    </ol>
 
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner ">
-
-                                        <div class="item active">
-                                            <img src="assets/images/final room 3.jpg" style="width: 100%;">
-                                        </div>
-                                        <div class="item">
-                                            <img src="assets/images/final room 1.jpg" style="width: 100%;">
-                                        </div>
-                                    </div>
-
-                                    <!-- Left and right controls -->
-                                    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 animated" data-fx="fadeInRight">
-                                <div class="ct-productBox-content">
-                                    <div class="ct-productBox-header">
-                                        <h4 class="text-capitalize ct-productBox-title">Non-AC Room</h4>
-                                        <p>A beautiful room with study table and balcony.</p>
-                                        <span class="ct-hr ct-hr--type1 ct-u-marginTop20 ct-u-marginBottom20 ct-js-btnScroll"
-                                              data-background="#f7f7f7">Line break</span>
-                                    </div>
-                                    <ul class="list-unstyled ct-list--type2 ct-list--striped ct-icon--motive ct-u-paddingTop25">
-
-                                        <li><i class="fas fa-check-circle"></i>2 Sharing room</li>
-                                        <li><i class="fas fa-check-circle"></i>Attached Bathroom</li>
-                                        <li><i class="fas fa-check-circle"></i>Personal Wardrobe</li>
-                                        <li><i class="fas fa-check-circle"></i>Study Table</li>
-                                        <li><i class="fas fa-check-circle"></i>Balcony</li>
-                                        <li><i class="fas fa-check-circle"></i>Laundary Bag</li>
-
-                                    </ul>
-                                    <a href="#section9" class="btn btn-primary ct-u-marginTop20 ct-js-btnScroll">enquiry
-                                        now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ct-productBox ct-productBox--type2 ct-u-paddingBottom40">
-                        <div class="row">
-                            <div class="col-md-8 animated" data-fx="fadeInLeft">
-                                <div id="myCarousel3" class="carousel slide ct-u-marginBottom30 " data-ride="carousel">
-                                    <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
-                                    </ol>
-
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner ">
-
-                                        <div class="item active">
-                                            <img src="assets/images/d1.jpg" style="width: 100%;">
-                                        </div>
-                                        <div class="item">
-                                            <img src="assets/images/d2.jpg" style="width: 100%;">
-                                        </div>
-                                        <div class="item">
-                                            <img src="assets/images/d3.jpg" style="width: 100%;">
-                                        </div>
-                                    </div>
-
-                                    <!-- Left and right controls -->
-                                    <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 animated" data-fx="fadeInRight">
-                                <div class="ct-productBox-content">
-                                    <div class="ct-productBox-header">
-                                        <h4 class="text-capitalize ct-productBox-title">Dormitory</h4>
-                                        <p>An exclusive and very spacious multi-bed room.</p>
-                                        <span class="ct-hr ct-hr--type1 ct-u-marginTop20 ct-u-marginBottom20 ct-js-btnScroll"
-                                              data-background="#f7f7f7">Line break</span>
-                                    </div>
-                                    <ul class="list-unstyled ct-list--type2 ct-list--striped ct-icon--motive ct-u-paddingTop25">
-
-                                        <li><i class="fas fa-check-circle"></i>6 Sharing room</li>
-                                        <li><i class="fas fa-check-circle"></i>Attached Bathroom</li>
-                                        <li><i class="fas fa-check-circle"></i>Personal Wardrobe</li>
-                                        <li><i class="fas fa-check-circle"></i>Study Table</li>
-                                        <li><i class="fas fa-check-circle"></i>Laundary Bag</li>
-
-                                    </ul>
-                                    <a href="#section9" class="btn btn-primary ct-u-marginTop20 ct-js-btnScroll">enquiry
-                                        now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ct-productBox ct-productBox--type2">
-                        <div class="row">
-                            <div class="col-md-8 animated" data-fx="fadeInLeft">
-                                <div id="myCarousel2" class="carousel slide ct-u-marginBottom30 " data-ride="carousel">
-                                    <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="3"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="4"></li>
-                                    </ol>
-
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner ">
-
-                                        <div class="item active">
-                                            <img src="assets/images/jr1.jpg" style="width: 100%;">
-                                        </div>
-                                        <div class="item">
-                                            <img src="assets/images/jr2.jpg" style="width: 100%;">
-                                        </div>
-
-                                        <div class="item">
-                                            <img src="assets/images/jr3.jpg" style="width: 100%;">
-                                        </div>
-
-                                        <div class="item">
-                                            <img src="assets/images/jr4.jpg" style="width: 100%;">
-                                        </div>
-
-                                        <div class="item">
-                                            <img src="assets/images/jr5.jpg" style="width: 100%;">
-                                        </div>
-                                    </div>
-
-                                    <!-- Left and right controls -->
-                                    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 animated" data-fx="fadeInRight">
-                                <div class="ct-productBox-content">
-                                    <div class="ct-productBox-header">
-                                        <h4 class="text-capitalize ct-productBox-title">Junior Students Room</h4>
-                                        <p>Spacious rooms for students of high schools.</p>
-                                        <span class="ct-hr ct-hr--type1 ct-u-marginTop20 ct-u-marginBottom20"
-                                              data-background="#f7f7f7">Line break</span>
-                                    </div>
-                                    <ul class="list-unstyled ct-list--type2 ct-list--striped ct-icon--motive ct-u-paddingTop25">
-
-                                        <li><i class="fas fa-check-circle"></i>3 Sharing room</li>
-                                        <li><i class="fas fa-check-circle"></i>Personal Wardrobe</li>
-                                        <li><i class="fas fa-check-circle"></i>Study Table</li>
-                                        <li><i class="fas fa-check-circle"></i>Laundary Bag</li>
-                                    </ul>
-                                    <a href="#section9" class="btn btn-primary ct-u-marginTop20 ct-js-btnScroll">enquiry
-                                        now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </
-    >
-
-    <section id="section4" class="ct-mediaSection section" data-type="parallax" data-height="663"
-             data-background="./assets/images/demo-content/media_section1.jpg" data-stellar-background-ratio="0.2"
-             data-background-mobile="./assets/images/demo-content/media_section1.jpg">
-        <div class="ct-mediaSection-inner">
-            <div class="container">
-                <div class="col-sm-8 ct-u-backgroundDark">
-                    <div class="ct-sectionHeader ct-sectionHeader--type2 ct-u-marginBottom50 text-center">
-                        <h3 class="ct-sectionHeader-title text-uppercase text-center ct-u-colorWhite">
-                            how do you get here
-                        </h3>
-                    </div>
-                    <div class="media ct-iconBox ct-iconBox--type3">
-                        <div class="media-left">
-                            <span class="media-object ct-iconBox-icon ct-icon-train" role="presentation"></span>
-                        </div>
-                        <div class="media-body">
-                            <h5 class="media-heading ct-u-colorWhite">arriving by train</h5>
-                            <p class="ct-u-colorWhite ct-iconBox-description">
-                                AVD campus is around 7 Km away from Anand railway station. Pick up an auto/bus and drive
-                                via GJ SH
-                                60 & 100 Feet Rd or via Anand-Vidyanagar Road leading to AVD Campus.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media ct-iconBox ct-iconBox--type3">
-                        <div class="media-left">
-                            <span class="media-object ct-iconBox-icon ct-icon-bus" role="presentation"></span>
-                        </div>
-                        <div class="media-body">
-                            <h5 class="media-heading ct-u-colorWhite">arriving by bus</h5>
-                            <p class="ct-u-colorWhite ct-iconBox-description">
-                                New Anand Bus Station - 6km away from campus. Easily commute by public transport which
-                                travels
-                                through Zydus Hospital and then pick GJ SH 60 Rd leading to Campus.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media ct-iconBox ct-iconBox--type3">
-                        <div class="media-left">
-                            <span class="media-object ct-iconBox-icon ct-icon-car" role="presentation"></span>
-                        </div>
-                        <div class="media-body">
-                            <h5 class="media-heading ct-u-colorWhite">Personal Transports</h5>
-                            <p class="ct-u-colorWhite ct-iconBox-description">Vehicles arriving from NH-8 need to pass
-                                through
-                                Samarkha Chokdi and drive through Bhalej road leading to 100 Feet rd which leads to
-                                campus.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <img src="assets/images/hsh.png" class="ct-mediaSection-Subimage animated hidden-sm" data-fx="fadeInUp"
-                     data-time="1000" alt="Chambermaid"/>
-            </div>
-        </div>
-    </section>
-
-    <section id="section7" class="ct-u-paddingTop90 ct-u-paddingBottom100 section" data-background="#c0bebe17">
-        <div class="container">
-            <div class="ct-sectionHeader ct-sectionHeader--type1 ct-u-marginBottom75 text-center">
-                <h3 class="ct-sectionHeader-title text-uppercase">Gallery</h3>
-            </div>
-        </div>
-        <div class="container">
-            <ul id="myGallery" class="list-unstyled list-inline ct-gallery-filters text-center">
-                <li class="gallery-btn active" onclick="filterSelection('rm')">Reading Room</li>
-                <li class="gallery-btn" onclick="filterSelection('dh')">Dinning Hall</li>
-                <li class="gallery-btn" onclick="filterSelection('se')">Sports Events</li>
-                <li class="gallery-btn" onclick="filterSelection('mandir')">Mandir</li>
-                <li class="gallery-btn" onclick="filterSelection('ce')">Cultural Events</li>
-                <li class="gallery-btn" onclick="filterSelection('gym')">Gym</li>
-            </ul>
-            <div class="row">
-
-                <!-- Portfolio Gallery Grid -->
-                <!--Cultural events-->
-
-                <div class="column ce">
-                    <img src="assets/images/e1.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e2.JPG" style="width:100%">
-                </div>
-                <div class="column ce">
-                    <img src="assets/images/e3.JPG" style="width:100%">
-                </div>
-                <div class="column ce">
-                    <img src="assets/images/e4.JPG" style="width:100%">
-                </div>
-                <div class="column ce">
-                    <img src="assets/images/e5.JPG" style="width:100%">
-                </div>
-                <div class="column ce">
-                    <img src="assets/images/e6.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e7.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e8.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e9.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e10.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e11.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e12.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e13.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e14.JPG" style="width:100%">
-                </div>
-
-
-                <div class="column ce">
-                    <img src="assets/images/e15.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e16.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e17.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e18.JPG" style="width:100%">
-                </div>
-
-                <div class="column ce">
-                    <img src="assets/images/e19.JPG" style="width:100%">
-                </div>
-
-
-                <!---Sports-->
-                <div class="column se">
-                    <img src="assets/images/s1.JPG" style="width:100%">
-                </div>
-
-                <div class="column se">
-                    <img src="assets/images/s2.JPG" style="width:100%">
-                </div>
-                <div class="column se">
-                    <img src="assets/images/s3.JPG" style="width:100%">
-                </div>
-                <div class="column se">
-                    <img src="assets/images/s4.JPG" style="width:100%">
-                </div>
-                <div class="column se">
-                    <img src="assets/images/s5.JPG" style="width:100%">
-                </div>
-                <div class="column se">
-                    <img src="assets/images/s6.JPG" style="width:100%">
-                </div>
-                <div class="column se">
-                    <img src="assets/images/s7.JPG" style="width:100%">
-                </div>
-                <div class="column se">
-                    <img src="assets/images/s8.JPG" style="width:100%">
-                </div>
-                <div class="column se">
-                    <img src="assets/images/s9.JPG" style="width:100%">
-                </div>
-                <div class="column se">
-                    <img src="assets/images/s10.JPG" style="width:100%">
-                </div>
-                <!--Dinning Hall-->
-
-
-                <div class="column dh">
-                    <img src="assets/images/dh1.jpg" style="width:100%">
-                </div>
-                <div class="column dh">
-                    <img src="assets/images/dh2.jpg" style="width:100%">
-                </div>
-                <div class="column dh">
-                    <img src="assets/images/dh3.jpg" style="width:100%">
-
-                </div>
-                <div class="column dh">
-                    <img src="assets/images/dh4.jpg" style="width:100%">
-
-                </div>
-
-
-                <!--Mandir-->
-                <div class="column mandir">
-                    <img src="assets/images/t1.jpeg" style="width:100%">
-                </div>
-                <div class="column mandir">
-                    <img src="assets/images/t2.jpeg" style="width:100%">
-                </div>
-                <div class="column mandir">
-                    <img src="assets/images/t3.jpeg" style="width:100%">
-                </div>
-                <div class="column mandir">
-                    <img src="assets/images/t4.jpeg" style="width:100%">
-                </div>
-                <div class="column mandir">
-                    <img src="assets/images/t5.jpeg" style="width:100%">
-                </div>
-                <div class="column mandir">
-                    <img src="assets/images/t6.jpeg" style="width:100%">
-                </div>
-
-
-                <!--Reading Room-->
-                <div class="column rm">
-                    <img src="assets/images/r1.png" style="width:100%">
-                </div>
-
-                <div class="column rm">
-                    <img src="assets/images/r2.png" style="width:100%">
-                </div>
-
-                <div class="column rm">
-                    <img src="assets/images/r3.jpg" style="width:100%">
-                </div>
-
-                <div class="column rm">
-                    <img src="assets/images/r4.jpg" style="width:100%">
-                </div>
-                <!--Gym-->
-
-
-                <div class="column gym">
-                    <img src="assets/images/gym.jpg" style="width:100%">
-                </div>
-                <!-- END GRID -->
-            </div>
-        </div>
-
-    </section>
-
-    <section id="section8" class="ct-u-paddingBottom40 section" data-background="#ffffff">
-        <center>
-            <section class="testimonials1 cid-s11dF9mKec mbr-parallax-background" id="testimonials1-0">
-                <div class="row">
-                    <div class="col-sm-12 animated" data-fx="fadeInLeft">
-                        <div id="myreview" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#myreview" data-slide-to="0" class="active"></li>
-                                <li data-target="#myreview" data-slide-to="1"></li>
-                                <li data-target="#myreview" data-slide-to="2"></li>
-                            </ol>
-
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner ">
-                                <div class="item active">
-                                    <div class="ct-sectionHeader ct-sectionHeader--type1 ct-u-marginBottom75 text-center">
-                                        <h3 class="ct-sectionHeader-title text-uppercase">Student's Reviews</h3>
-                                    </div>
-                                    <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4 col-lg-offset-2">
-                                        <div class="panel-item p-3">
-                                            <div class="card-block">
-                                                <div class="testimonial-photo">
-                                                    <img src="assets/images/mantra.jpg" alt="" title="">
-                                                </div>
-                                                <p class="mbr-text  mbr-fonts-style display-8">
-                                                    <span style="font-size: large;">&#8220;</span>
-                                                    I never thought that somebody can be helpful without any
-                                                    expectations. Also, I never felt
-                                                    I am
-                                                    away from home as the place just suited me with itself. I found the
-                                                    best mentors here,
-                                                    came in
-                                                    contact with good individuals, and along with that my every
-                                                    expectation of college life is
-                                                    answered.<span style="font-size: large;">&#8221;</span></p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">Mantra
-                                                    Sanathra
-                                                </div>
-                                                <small
-                                                        class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">Student</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4 ">
-                                        <div class="panel-item p-3">
-                                            <div class="card-block">
-                                                <div class="testimonial-photo">
-                                                    <img src="assets/images/senior.jpg">
-                                                </div>
-                                                <p class="mbr-text mbr-fonts-style display-8">
-                                                    <span style="font-size: large;">&#8220;</span>
-                                                    Stepping out form the protected environment and studying far away
-                                                    from home was a
-                                                    challenge
-                                                    for
-                                                    me. But maybe my parent's decision of admitting me here at
-                                                    Harisaurabh Hostel was a
-                                                    blessing
-                                                    for
-                                                    me. Not only I secured my Academics but me being able with a healthy
-                                                    attitude and just
-                                                    cultural
-                                                    and moral values is possible because of the environment here I
-                                                    perceived.
-                                                    <span style="font-size: large;">&#8221;</span>
-                                                </p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">
-                                                    Axat Patel
-                                                </div>
-                                                <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">
-                                                    4th yr Student (BE IT, ADIT)
-                                                </small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="item">
-                                    <div class="ct-sectionHeader ct-sectionHeader--type1 ct-u-marginBottom75 text-center">
-                                        <h3 class="ct-sectionHeader-title text-uppercase">Alumni's Reviews</h3>
-                                    </div>
-                                    <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4 col-lg-offset-2">
-                                        <div class="panel-item p-3">
-                                            <div class="card-block">
-                                                <div class="testimonial-photo">
-                                                    <img src="assets/images/alumni2.jpeg">
-                                                </div>
-                                                <p class="mbr-text mbr-fonts-style display-8">
-                                                    <span style="font-size: large;">&#8220;</span>
-                                                    Frankly, it wasn't my initial choice but was more of a dad's.
-                                                    But till date, if I miss anything in about my entire academic life
-                                                    is staying at AVD.
-                                                    The atmosphere made an impact which I realized later when I cracked
-                                                    CAT.
-                                                    So much attention was paid to me. And damn that breakfast!
-                                                    Class-apart!
-                                                    I didn't make friends instead came out with a family.
-                                                    The guidance provided by Anand Sagar Swamiji and Gurus'
-                                                    talks enabled a life-altering experience at AVD<span
-                                                        style="font-size: large;">&#8221;</span>
-                                                </p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">
-                                                    Naitik Joshi
-                                                </div>
-                                                <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">
-                                                    Buisness Analyst, American Express
-                                                </small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
-                                        <div class="panel-item p-3">
-                                            <div class="card-block">
-                                                <div class="testimonial-photo">
-                                                    <img src="assets/images/alumni1.jpeg" alt="" title="">
-                                                </div>
-
-                                                <p class="mbr-text mbr-fonts-style display-8">
-                                                    <span style="font-size: large;">&#8220;</span>
-                                                    Apart from the amazing infrastructure and facilities, I experienced
-                                                    real contentment and
-                                                    positivity inside the AVD campus. AVD gave me an environment, rather
-                                                    a platform to excel
-                                                    in my life. I met many intellectuals here who were always on foot to
-                                                    help me in any of my
-                                                    falls and I really appreciate the people who nurtured such humane
-                                                    soules. Here, I met my
-                                                    Guru mentors who always encouraged and assisted me for my Masters's
-                                                    entrance which are the
-                                                    key acumens making me to NIT Warangal.<span
-                                                        style="font-size: large;">&#8221;</span></p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">Zeel
-                                                    Bhojani
-                                                </div>
-                                                <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">R&D
-                                                    Joint
-                                                    Replacement, Stryker
-                                                </small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="item">
-                                    <div class="ct-sectionHeader ct-sectionHeader--type1 ct-u-marginBottom75 text-center">
-                                        <h3 class="ct-sectionHeader-title text-uppercase">Parent's Reviews</h3>
-                                    </div>
-                                    <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4 col-lg-offset-2">
-                                        <div class="panel-item p-3">
-                                            <div class="card-block">
-                                                <div class="testimonial-photo">
-                                                    <img src="assets/images/parent2.jpeg">
-                                                </div>
-                                                <p class="mbr-text mbr-fonts-style display-8">
-                                                    <span style="font-size: large;">&#8220;</span>
-                                                    Good and clean place, healthy food, good roommates, and the best
-                                                    environment to study is
-                                                    all
-                                                    we
-                                                    were seeking, and I can say being a father that AVD is the best
-                                                    hostel for my son. I was
-                                                    never
-                                                    tensed for his studies and values as here he gained the best moral
-                                                    and cultural values
-                                                    along
-                                                    with blessings of soundest saints.
-                                                    <span style="font-size: large;">&#8221;</span>
-                                                </p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">
-                                                    Dipak Gor
-                                                </div>
-                                                <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">
-                                                    F/O Smit Gor
-                                                </small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
-                                        <div class="panel-item p-3">
-                                            <div class="card-block">
-                                                <div class="testimonial-photo">
-                                                    <img src="assets/images/parent1.jpeg">
-                                                </div>
-                                                <p class="mbr-text mbr-fonts-style display-8">
-                                                    <span style="font-size: large;">&#8220;</span>
-                                                    It is just we can't believe that a boy who never peeped out of books
-                                                    is now participating
-                                                    in
-                                                    various cultural and stage events. A totally new boy is he today who
-                                                    not only has
-                                                    habituated
-                                                    good qualities but also learned the true way of living a good life.
-                                                    Also, the people here
-                                                    are
-                                                    like family to us who always beckons us to participate in any of
-                                                    their programs.
-                                                    <span style="font-size: large;">&#8221;</span>
-                                                </p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">
-                                                    Hiten Sanathra
-                                                </div>
-                                                <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">
-                                                    F/O Mantra Sanathra
-                                                </small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#myreview" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#myreview" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-            </section>
-        </center>
-    </section>
-    <footer id="section9" class="ct-footer section" data-background="#f6f6f6">
-        <div>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <div data-background="#ffffff" data-height="380"
-                             class=" ct-u-positionRelative ct-u-paddingLeft50 ct-u-paddingRight50 contactForm contactForm--gray animated contactForm--type2"
-                             data-fx="fadeInUpBig">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div
-                                            class="ct-sectionHeader ct-sectionHeader--type4 text-center ct-u-paddingTop30 ct-u-marginBottom50">
-                                        <h2 class="ct-sectionHeader-title text-uppercase">enquiry Form</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <div class="form-group ct-input--icon">
-                                        <input type="text" id="firstName" class="form-control input-lg" name="name"
-                                               placeholder="First Name"
-                                               required/>
-                                        <i class="fa fa-user"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <div class="form-group ct-input--icon">
-                                        <input type="text" id="middleName" class="form-control input-lg" name="name"
-                                               placeholder="Middle Name"
-                                               required/>
-                                        <i class="fa fa-user"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <div class="form-group ct-input--icon">
-                                        <input type="text" id="lastName" class="form-control input-lg" name="name"
-                                               placeholder="LastName"
-                                               required/>
-                                        <i class="fa fa-user"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <div class="form-group ct-input--icon">
-                                        <input type="tel" id="contact_no" class="form-control input-lg"
-                                               name="contact_no"
-                                               placeholder="Contact No." required/>
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <div class="form-group ct-input--icon">
-                                        <input type="tel" id="father_contact" class="form-control input-lg"
-                                               name="father_contact"
-                                               placeholder="Father's Contact No." required/>
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <div class="form-group ct-input--icon">
-                                        <input type="text" id="city" class="form-control input-lg" name="name"
-                                               placeholder="City / Village"
-                                               required/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <div class="form-group ct-input--icon">
-                                        <input type="text" id="district" class="form-control input-lg" name="name"
-                                               placeholder="District"
-                                               required/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <div class="form-group ct-input--icon">
-                                        <input type="text" id="state" class="form-control input-lg" name="name"
-                                               placeholder="State"
-                                               required/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <button onclick="enquiry_form()" type="submit"
-                                            class="btn btn-primary ct-u-marginTop20 ct-u-marginBottom50">
-                                        Send now
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <p id="successMessage" style="color: green">Enquiry Form Successfully Submitted . We
-                                        Will Contact You Soon</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-
-            <section class="cid-s13HQcPzGJ" id="footer2-3" style="background-color:#363636;">
-                <div class="container">
-                    <div class=" media-container-row content">
-                        <div class="col-12 col-md-3 col-md-offset-1 mbr-fonts-style display-7">
-                            <h6 class="mbr-text ct-u-paddingTop25" style="color: aliceblue;">
-                                <strong><span class="fa fa-map-marker" style="color:#f77345"></span> Address</strong>
-                            </h6>
-                            <p style="color: aliceblue;">
-                                Atmiya Vidhya Dham, Atmiya Marg,
-                                Near Vidyanagar Dist., Bakrol Rd,
-                                Vallabh Vidyanagar, Bakrol, Gujarat 388120
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-4 mbr-fonts-style display-7">
-                            <h6 class="mbr-text ct-u-paddingTop25" style="color: aliceblue;">
-                                <strong><span class="fa fa-list" style="color: #f77345;"></span> Contacts</strong>
-                            </h6>
-                            <p style="color: aliceblue;">
-                                <span class="fa fa-envelope" style="color: #f77345;"></span> <a
-                                    href="mailto:harisaurabh.hostel@gmail.com">harisaurabh.hostel@gmail.com</a>
-                                <br><span class="fa fa-phone" style="color: #f77345;"></span> Sharadbhai: <a
-                                    href="tel:+919712977261"
-                                    active>+91 97129 77261</a>
-                                <br><span class="fa fa-phone" style="color: #f77345;"></span> Vinitbhai Patel: <a
-                                    href="tel:+919925004164" active>+91 99250 04164
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="google-map ct-u-paddingBoth25">
-                                <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14738.464935607119!2d72.9184809!3d22.5560443!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8afc77ec630f362f!2sHari%20Saurabh%20Hostel%20(%20For%20Boys%20Only%20)%20AVD!5e0!3m2!1sen!2sin!4v1591378802990!5m2!1sen!2sin"
-                                        width="350" height="200" frameborder="0" style="border:0;" allowfullscreen=""
-                                        aria-hidden="false"
-                                        tabindex="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-lower">
-                        <div class="media-container-row">
-                            <div class="col-sm-12">
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="media-container-row mbr-white">
-                            <div class="col-sm-6 copyright">
-                                <p class="mbr-text mbr-fonts-style display-7" style="color: aliceblue;">
-                                    © Copyright
-                                    <script>
-                                        document.write(new Date().getFullYear());
-                                    </script>
-                                    Hari Saurabh Hostel - All Rights Reserved
+                            <div class="col-md-12 col-lg-6">
+                                <h1 class="ct-u-size70 ct-fw-700 text-uppercase  ct-ff-openSans animated"
+                                    data-fx="fadeInUp" style="color:  #ee852e; text-shadow: 100px;">
+                                    Temple<small class="ct-u-size48 ct-fw-300  ct-ff-openSans text-lowercase"
+                                        style="color: white;">
+                                        Where
+                                        Peace
+                                        Prevails</small>
+                                </h1>
+                                <p class="lead  ct-u-paddingTop30 animated" data-fx="fadeInDown" style="color: white;">
+                                    A place of cool stone, beauty, shafting sunlight, warmth, and satisfaction where
+                                    every
+                                    heart flashes
+                                    purity is what a temple implies. With the blessings of Lord Swaminarayan, AVD campus
+                                    comprises of a
+                                    beautiful temple with enormous devotees stepping in for peace and positivity.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            <div class="item" data-bg="assets/images/sabha.jpg" data-background-size="cover">
+                <!-- [1] -->
+                <div class="item-inner" data-vertical="middle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                <h1 class="ct-u-size70 ct-fw-700 text-uppercase ct-u-colorWhite ct-ff-openSans animated"
+                                    data-fx="fadeInUp">
+                                    Prayer Hall<small
+                                        class="ct-u-size48 ct-fw-300 ct-u-colorWhite ct-ff-openSans text-lowercase">Togetherness
+                                        is half
+                                        success
+                                    </small>
+                                </h1>
+                                <p class="lead ct-u-colorWhite ct-u-paddingTop30 animated" data-fx="fadeInDown">
+                                    A large prayer hall with the capacity of 1000+ individuals is a symbol of
+                                    togetherness.
+                                    Prayer hall
+                                    symbolizes the ancient Gurukul culture where students come together for prayers and
+                                    augment positive
+                                    energy in themselves. Every day in evening prayer is performed here by the students
+                                    of
+                                    Harisaurabh
+                                    Hostel. Also, various stage events and Sabha are organized at this place.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-</div>
-<!-- Page Wrapper [end] -->
 
-<!-- JavaScripts -->
-<script src="assets/js/external.min.js"></script>
+        <section class="ct-mediaSection ct-u-displayBlock" data-type="kenburns" data-height="640"
+            data-background-mobile="./assets/images/demo-content/media_section.jpg">
+            <div class="ct-mediaSection-kenburns">
+                <img src="assets/images/demo-content/media_section.jpg" alt="Image" />
+            </div>
+            <div class="text-center ct-u-paddingTop90">
+                <div class="container">
+                    <div class="ct-sectionHeader ct-sectionHeader--type1 text-center ct-u-marginBottom90">
+                        <h3 class="ct-sectionHeader-title text-uppercase ct-u-colorWhite">Amenities</h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="ct-js-slick ct-slick ct-slick-arrows--type3 ct-slick-arrows--position6 ct-slick-arrows--motive"
+                                data-LGitems="6" data-MDitems="4" data-SMitems="3" data-XSitems="2"
+                                data-adaptiveHeight="true" data-dots="false" data-arrows="true">
+                                <div class="item">
+                                    <!-- [1] -->
+                                    <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
+                                        <span class="ct-iconBox-icon"><i class="fa fa-book"></i></span>
+                                        <p class="ct-iconBox-title">Reading room</p>
+                                    </div>
+                                    <div class="ct-iconBox ct-iconBox--type4">
+                                        <span class="ct-iconBox-icon"><i class="fa fa-desktop"></i></span>
+                                        <p class="ct-iconBox-title">TV Room</p>
+                                    </div>
+                                </div>
 
-<!-- Main js file -->
-<script src="assets/js/main.js"></script>
+                                <div class="item">
+                                    <!-- [3] -->
+                                    <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
+                                        <span class="ct-iconBox-icon"><i class="fa fa-users"></i></span>
+                                        <p class="ct-iconBox-title">Hospitality</p>
+                                    </div>
+                                    <div class="ct-iconBox ct-iconBox--type4">
+                                        <span class="ct-iconBox-icon"><i class="fa fa-medkit"></i></span>
+                                        <p class="ct-iconBox-title">First-Aid</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <!-- [4] -->
+                                    <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
+                                        <span class="ct-iconBox-icon"><i class="fa fa-smile-o"></i></span>
+                                        <p class="ct-iconBox-title">Weekly Sabha</p>
+                                    </div>
+                                    <div class="ct-iconBox ct-iconBox--type4">
+                                        <span class="ct-iconBox-icon"><i class="fa fa-tint"></i></span>
+                                        <p class="ct-iconBox-title">Water Cooler</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <!-- [5] -->
+                                    <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
+                                        <span class="ct-iconBox-icon"><i class="fas fa-tachometer-alt"></i></span>
+                                        <p class="ct-iconBox-title">Lift</p>
+                                    </div>
+                                    <div class="ct-iconBox ct-iconBox--type4">
+                                        <span class="ct-iconBox-icon"><i class="fas fa-praying-hands"></i></span>
+                                        <p class="ct-iconBox-title">Temple</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <!-- [6] -->
+                                    <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
+                                        <span class="ct-iconBox-icon"><i class="fas fa-pizza-slice"></i></span>
+                                        <p class="ct-iconBox-title">Dinnig Hall</p>
+                                    </div>
+                                    <div class="ct-iconBox ct-iconBox--type4">
+                                        <span class="ct-iconBox-icon"><i class="fa fa-road"></i></span>
+                                        <p class="ct-iconBox-title">Free Parking</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <!-- [6] -->
+                                    <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
+                                        <span class="ct-iconBox-icon"><i class="fas fa-futbol"></i></span>
+                                        <p class="ct-iconBox-title">Ground</p>
+                                    </div>
+                                    <div class="ct-iconBox ct-iconBox--type4">
+                                        <span class="ct-iconBox-icon"><i class="fas fa-eye"></i></span>
+                                        <p class="ct-iconBox-title">CCTV</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <!-- [7] -->
+                                    <div class="ct-iconBox ct-iconBox--type4 ct-u-marginBottom50">
+                                        <span class="ct-iconBox-icon"><i class="fas fa-tshirt"></i></span>
+                                        <p class="ct-iconBox-title">Laundary</p>
+                                    </div>
+                                    <div class="ct-iconBox ct-iconBox--type4">
+                                        <span class="ct-iconBox-icon"><i class="fas fa-dumbbell"></i></span>
+                                        <p class="ct-iconBox-title">Gym</p>
+                                    </div>
 
-<!--Firebase-->
-<script src="assets/form/js/enquiry-form.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3" class="ct-u-paddingTop80 section" data-background="#ffffff">
+            <div class="container">
+                <div class="ct-sectionHeader ct-sectionHeader--type1 text-center ct-u-marginBottom50">
+                    <h3 class="ct-sectionHeader-title text-uppercase">our rooms</h3>
+                    <p class="ct-u-paddingTop60">
+                        We offer a great list of room types so you can have a great time at our hostel.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="ct-productBox ct-productBox--type2 ct-u-paddingBottom40">
+                            <div class="row">
+                                <div class="col-md-8 animated" data-fx="fadeInLeft">
 
-<!-- Onepager -->
-<script src="assets/js/onepager/jquery.pagescroller.lite.js"></script>
-<script src="assets/js/onepager/init.js"></script>
+                                    <div id="myCarousel" class="carousel slide ct-u-marginBottom30 "
+                                        data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                                        </ol>
 
-<!-- Slick -->
-<script src="assets/js/slick/js/slick.js"></script>
-<script src="assets/js/slick/js/init.js"></script>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner ">
+                                            <div class="item active ">
+                                                <img src="assets/images/final_room 2.jpg" style="width: 100%;">
+                                            </div>
 
-<!-- Portfolio -->
-<script src="assets/js/portfolio/jquery.isotope.min.js"></script>
-<script src="assets/js/portfolio/imagesloaded.js"></script>
-<script src="assets/js/portfolio/init.js"></script>
+                                            <div class="item">
+                                                <img src="assets/images/final room 4.jpg" style="width: 100%;">
+                                            </div>
 
-<!-- Media Section -->
-<script src="assets/js/ct-mediaSection/js/smoothScroll.js"></script>
-<script src="assets/js/ct-mediaSection/js/jquery.stellar.min.js"></script>
-<script src="assets/js/ct-mediaSection/js/media-section.js"></script>
+                                            <div class="item">
+                                                <img src="assets/images/bathroom.jpg" style="width: 100%;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="assets/images/final room 3.jpg" style="width: 100%;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="assets/images/final room 1.jpg" style="width: 100%;">
+                                            </div>
+                                        </div>
 
-<!-- Selectize -->
-<script src="assets/js/selectize/selectize.min.js"></script>
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
 
-<!-- Date time picker -->
-<script src="assets/js/datetime-picker/datetime-picker.min.js"></script>
-<script src="assets/js/datetime-picker/init.js"></script>
+                                </div>
+                                <div class="col-md-4 animated" data-fx="fadeInRight">
+                                    <div class="ct-productBox-content">
+                                        <div class="ct-productBox-header">
+                                            <h4 class="text-capitalize ct-productBox-title">AC Room</h4>
+                                            <p>A comfortable and quiet room with split AC.</p>
+                                            <span class="ct-hr ct-hr--type1 ct-u-marginTop20 ct-u-marginBottom20"
+                                                data-background="#f7f7f7">Line break</span>
+                                        </div>
+                                        <ul
+                                            class="list-unstyled ct-list--type2 ct-list--striped ct-icon--motive ct-u-paddingTop25">
+                                            <li><i class="fas fa-check-circle"></i>Air Conditioning</li>
+                                            <li><i class="fas fa-check-circle"></i>2 Sharing room</li>
+                                            <li><i class="fas fa-check-circle"></i>Attached Bathroom</li>
+                                            <li><i class="fas fa-check-circle"></i>Personal Wardrobe & Study Table</li>
+                                            <li><i class="fas fa-check-circle"></i>Balcony</li>
+                                            <li><i class="fas fa-check-circle"></i>Laundary Bag</li>
+                                        </ul>
+                                        <a href="#section9"
+                                            class="btn btn-primary ct-u-marginTop20 ct-js-btnScroll">enquiry
+                                            now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct-productBox ct-productBox--type2 ct-u-paddingBottom40">
+                            <div class="row">
+                                <div class="col-md-8 animated" data-fx="fadeInLeft">
+                                    <div id="myCarousel1" class="carousel slide ct-u-marginBottom30 "
+                                        data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel1" data-slide-to="1"></li>
+                                        </ol>
 
-<!-- Topbar and Navbar effects -->
-<script src="assets/js/headroom/headroom.js"></script>
-<script src="assets/js/headroom/jQuery.headroom.js"></script>
-<script src="assets/js/headroom/init.js"></script>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner ">
 
-<!-- Magnific popup gallery -->
-<script src="assets/js/magnificpopup/magnificpopup.min.js"></script>
-<script src="assets/js/magnificpopup/init.js"></script>
+                                            <div class="item active">
+                                                <img src="assets/images/final room 3.jpg" style="width: 100%;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="assets/images/final room 1.jpg" style="width: 100%;">
+                                            </div>
+                                        </div>
+
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 animated" data-fx="fadeInRight">
+                                    <div class="ct-productBox-content">
+                                        <div class="ct-productBox-header">
+                                            <h4 class="text-capitalize ct-productBox-title">Non-AC Room</h4>
+                                            <p>A beautiful room with study table and balcony.</p>
+                                            <span
+                                                class="ct-hr ct-hr--type1 ct-u-marginTop20 ct-u-marginBottom20 ct-js-btnScroll"
+                                                data-background="#f7f7f7">Line break</span>
+                                        </div>
+                                        <ul
+                                            class="list-unstyled ct-list--type2 ct-list--striped ct-icon--motive ct-u-paddingTop25">
+
+                                            <li><i class="fas fa-check-circle"></i>2 Sharing room</li>
+                                            <li><i class="fas fa-check-circle"></i>Attached Bathroom</li>
+                                            <li><i class="fas fa-check-circle"></i>Personal Wardrobe</li>
+                                            <li><i class="fas fa-check-circle"></i>Study Table</li>
+                                            <li><i class="fas fa-check-circle"></i>Balcony</li>
+                                            <li><i class="fas fa-check-circle"></i>Laundary Bag</li>
+
+                                        </ul>
+                                        <a href="#section9"
+                                            class="btn btn-primary ct-u-marginTop20 ct-js-btnScroll">enquiry
+                                            now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct-productBox ct-productBox--type2 ct-u-paddingBottom40">
+                            <div class="row">
+                                <div class="col-md-8 animated" data-fx="fadeInLeft">
+                                    <div id="myCarousel3" class="carousel slide ct-u-marginBottom30 "
+                                        data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel3" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel3" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner ">
+
+                                            <div class="item active">
+                                                <img src="assets/images/d1.jpg" style="width: 100%;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="assets/images/d2.jpg" style="width: 100%;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="assets/images/d3.jpg" style="width: 100%;">
+                                            </div>
+                                        </div>
+
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 animated" data-fx="fadeInRight">
+                                    <div class="ct-productBox-content">
+                                        <div class="ct-productBox-header">
+                                            <h4 class="text-capitalize ct-productBox-title">Dormitory</h4>
+                                            <p>An exclusive and very spacious multi-bed room.</p>
+                                            <span
+                                                class="ct-hr ct-hr--type1 ct-u-marginTop20 ct-u-marginBottom20 ct-js-btnScroll"
+                                                data-background="#f7f7f7">Line break</span>
+                                        </div>
+                                        <ul
+                                            class="list-unstyled ct-list--type2 ct-list--striped ct-icon--motive ct-u-paddingTop25">
+
+                                            <li><i class="fas fa-check-circle"></i>6 Sharing room</li>
+                                            <li><i class="fas fa-check-circle"></i>Attached Bathroom</li>
+                                            <li><i class="fas fa-check-circle"></i>Personal Wardrobe</li>
+                                            <li><i class="fas fa-check-circle"></i>Study Table</li>
+                                            <li><i class="fas fa-check-circle"></i>Laundary Bag</li>
+
+                                        </ul>
+                                        <a href="#section9"
+                                            class="btn btn-primary ct-u-marginTop20 ct-js-btnScroll">enquiry
+                                            now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct-productBox ct-productBox--type2">
+                            <div class="row">
+                                <div class="col-md-8 animated" data-fx="fadeInLeft">
+                                    <div id="myCarousel2" class="carousel slide ct-u-marginBottom30 "
+                                        data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel2" data-slide-to="2"></li>
+                                            <li data-target="#myCarousel2" data-slide-to="3"></li>
+                                            <li data-target="#myCarousel2" data-slide-to="4"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner ">
+
+                                            <div class="item active">
+                                                <img src="assets/images/jr1.jpg" style="width: 100%;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="assets/images/jr2.jpg" style="width: 100%;">
+                                            </div>
+
+                                            <div class="item">
+                                                <img src="assets/images/jr3.jpg" style="width: 100%;">
+                                            </div>
+
+                                            <div class="item">
+                                                <img src="assets/images/jr4.jpg" style="width: 100%;">
+                                            </div>
+
+                                            <div class="item">
+                                                <img src="assets/images/jr5.jpg" style="width: 100%;">
+                                            </div>
+                                        </div>
+
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 animated" data-fx="fadeInRight">
+                                    <div class="ct-productBox-content">
+                                        <div class="ct-productBox-header">
+                                            <h4 class="text-capitalize ct-productBox-title">Junior Students Room</h4>
+                                            <p>Spacious rooms for students of high schools.</p>
+                                            <span class="ct-hr ct-hr--type1 ct-u-marginTop20 ct-u-marginBottom20"
+                                                data-background="#f7f7f7">Line break</span>
+                                        </div>
+                                        <ul
+                                            class="list-unstyled ct-list--type2 ct-list--striped ct-icon--motive ct-u-paddingTop25">
+
+                                            <li><i class="fas fa-check-circle"></i>3 Sharing room</li>
+                                            <li><i class="fas fa-check-circle"></i>Personal Wardrobe</li>
+                                            <li><i class="fas fa-check-circle"></i>Study Table</li>
+                                            <li><i class="fas fa-check-circle"></i>Laundary Bag</li>
+                                        </ul>
+                                        <a href="#section9"
+                                            class="btn btn-primary ct-u-marginTop20 ct-js-btnScroll">enquiry
+                                            now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </>
+
+            <section id="section4" class="ct-mediaSection section" data-type="parallax" data-height="663"
+                data-background="./assets/images/demo-content/media_section1.jpg" data-stellar-background-ratio="0.2"
+                data-background-mobile="./assets/images/demo-content/media_section1.jpg">
+                <div class="ct-mediaSection-inner">
+                    <div class="container">
+                        <div class="col-sm-8 ct-u-backgroundDark">
+                            <div class="ct-sectionHeader ct-sectionHeader--type2 ct-u-marginBottom50 text-center">
+                                <h3 class="ct-sectionHeader-title text-uppercase text-center ct-u-colorWhite">
+                                    how do you get here
+                                </h3>
+                            </div>
+                            <div class="media ct-iconBox ct-iconBox--type3">
+                                <div class="media-left">
+                                    <span class="media-object ct-iconBox-icon ct-icon-train" role="presentation"></span>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading ct-u-colorWhite">arriving by train</h5>
+                                    <p class="ct-u-colorWhite ct-iconBox-description">
+                                        AVD campus is around 7 Km away from Anand railway station. Pick up an auto/bus
+                                        and drive
+                                        via GJ SH
+                                        60 & 100 Feet Rd or via Anand-Vidyanagar Road leading to AVD Campus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media ct-iconBox ct-iconBox--type3">
+                                <div class="media-left">
+                                    <span class="media-object ct-iconBox-icon ct-icon-bus" role="presentation"></span>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading ct-u-colorWhite">arriving by bus</h5>
+                                    <p class="ct-u-colorWhite ct-iconBox-description">
+                                        New Anand Bus Station - 6km away from campus. Easily commute by public transport
+                                        which
+                                        travels
+                                        through Zydus Hospital and then pick GJ SH 60 Rd leading to Campus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media ct-iconBox ct-iconBox--type3">
+                                <div class="media-left">
+                                    <span class="media-object ct-iconBox-icon ct-icon-car" role="presentation"></span>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading ct-u-colorWhite">Personal Transports</h5>
+                                    <p class="ct-u-colorWhite ct-iconBox-description">Vehicles arriving from NH-8 need
+                                        to pass
+                                        through
+                                        Samarkha Chokdi and drive through Bhalej road leading to 100 Feet rd which leads
+                                        to
+                                        campus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/images/hsh.png" class="ct-mediaSection-Subimage animated hidden-sm"
+                            data-fx="fadeInUp" data-time="1000" alt="Chambermaid" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="section7" class="ct-u-paddingTop90 ct-u-paddingBottom100 section" data-background="#c0bebe17">
+                <div class="container">
+                    <div class="ct-sectionHeader ct-sectionHeader--type1 ct-u-marginBottom75 text-center">
+                        <h3 class="ct-sectionHeader-title text-uppercase">Gallery</h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <ul id="myGallery" class="list-unstyled list-inline ct-gallery-filters text-center">
+                        <li class="gallery-btn active" onclick="filterSelection('rm')">Reading Room</li>
+                        <li class="gallery-btn" onclick="filterSelection('dh')">Dinning Hall</li>
+                        <li class="gallery-btn" onclick="filterSelection('se')">Sports Events</li>
+                        <li class="gallery-btn" onclick="filterSelection('mandir')">Mandir</li>
+                        <li class="gallery-btn" onclick="filterSelection('ce')">Cultural Events</li>
+                        <li class="gallery-btn" onclick="filterSelection('gym')">Gym</li>
+                    </ul>
+                    <div class="row">
+
+                        <!-- Portfolio Gallery Grid -->
+
+                        <!--Reading Room-->
+                        <div class="column rm">
+                            <img src="assets/images/r1.png" style="width:100%">
+                        </div>
+
+                        <div class="column rm">
+                            <img src="assets/images/r2.png" style="width:100%">
+                        </div>
+
+                        <div class="column rm">
+                            <img src="assets/images/r3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="column rm">
+                            <img src="assets/images/r4.jpg" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e1.JPG" style="width:100%">
+                        </div>
+
+                        <!--Cultural events-->
+                        <div class="column ce">
+                            <img src="assets/images/e2.JPG" style="width:100%">
+                        </div>
+                        <div class="column ce">
+                            <img src="assets/images/e3.JPG" style="width:100%">
+                        </div>
+                        <div class="column ce">
+                            <img src="assets/images/e4.JPG" style="width:100%">
+                        </div>
+                        <div class="column ce">
+                            <img src="assets/images/e5.JPG" style="width:100%">
+                        </div>
+                        <div class="column ce">
+                            <img src="assets/images/e6.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e7.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e8.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e9.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e10.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e11.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e12.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e13.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e14.JPG" style="width:100%">
+                        </div>
+
+
+                        <div class="column ce">
+                            <img src="assets/images/e15.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e16.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e17.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e18.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column ce">
+                            <img src="assets/images/e19.JPG" style="width:100%">
+                        </div>
+
+
+                        <!---Sports-->
+                        <div class="column se">
+                            <img src="assets/images/s1.JPG" style="width:100%">
+                        </div>
+
+                        <div class="column se">
+                            <img src="assets/images/s2.JPG" style="width:100%">
+                        </div>
+                        <div class="column se">
+                            <img src="assets/images/s3.JPG" style="width:100%">
+                        </div>
+                        <div class="column se">
+                            <img src="assets/images/s4.JPG" style="width:100%">
+                        </div>
+                        <div class="column se">
+                            <img src="assets/images/s5.JPG" style="width:100%">
+                        </div>
+                        <div class="column se">
+                            <img src="assets/images/s6.JPG" style="width:100%">
+                        </div>
+                        <div class="column se">
+                            <img src="assets/images/s7.JPG" style="width:100%">
+                        </div>
+                        <div class="column se">
+                            <img src="assets/images/s8.JPG" style="width:100%">
+                        </div>
+                        <div class="column se">
+                            <img src="assets/images/s9.JPG" style="width:100%">
+                        </div>
+                        <div class="column se">
+                            <img src="assets/images/s10.JPG" style="width:100%">
+                        </div>
+                        <!--Dinning Hall-->
+
+
+                        <div class="column dh">
+                            <img src="assets/images/dh1.jpg" style="width:100%">
+                        </div>
+                        <div class="column dh">
+                            <img src="assets/images/dh2.jpg" style="width:100%">
+                        </div>
+                        <div class="column dh">
+                            <img src="assets/images/dh3.jpg" style="width:100%">
+
+                        </div>
+                        <div class="column dh">
+                            <img src="assets/images/dh4.jpg" style="width:100%">
+
+                        </div>
+
+
+                        <!--Mandir-->
+                        <div class="column mandir">
+                            <img src="assets/images/t1.jpeg" style="width:100%">
+                        </div>
+                        <div class="column mandir">
+                            <img src="assets/images/t2.jpeg" style="width:100%">
+                        </div>
+                        <div class="column mandir">
+                            <img src="assets/images/t3.jpeg" style="width:100%">
+                        </div>
+                        <div class="column mandir">
+                            <img src="assets/images/t4.jpeg" style="width:100%">
+                        </div>
+                        <div class="column mandir">
+                            <img src="assets/images/t5.jpeg" style="width:100%">
+                        </div>
+                        <div class="column mandir">
+                            <img src="assets/images/t6.jpeg" style="width:100%">
+                        </div>
+
+
+
+                        <!--Gym-->
+
+
+                        <div class="column gym">
+                            <img src="assets/images/gym.jpg" style="width:100%">
+                        </div>
+                        <!-- END GRID -->
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="section8" class="ct-u-paddingBottom40 section" data-background="#ffffff">
+                <center>
+                    <section class="testimonials1 cid-s11dF9mKec mbr-parallax-background" id="testimonials1-0">
+                        <div class="row">
+                            <div class="col-sm-12 animated" data-fx="fadeInLeft">
+                                <div id="myreview" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myreview" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myreview" data-slide-to="1"></li>
+                                        <li data-target="#myreview" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner ">
+                                        <div class="item active">
+                                            <div
+                                                class="ct-sectionHeader ct-sectionHeader--type1 ct-u-marginBottom75 text-center">
+                                                <h3 class="ct-sectionHeader-title text-uppercase">Student's Reviews</h3>
+                                            </div>
+                                            <div
+                                                class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4 col-lg-offset-2">
+                                                <div class="panel-item p-3">
+                                                    <div class="card-block">
+                                                        <div class="testimonial-photo">
+                                                            <img src="assets/images/mantra.jpg" alt="" title="">
+                                                        </div>
+                                                        <p class="mbr-text  mbr-fonts-style display-8">
+                                                            <span style="font-size: large;">&#8220;</span>
+                                                            I never thought that somebody can be helpful without any
+                                                            expectations. Also, I never felt
+                                                            I am
+                                                            away from home as the place just suited me with itself. I
+                                                            found the
+                                                            best mentors here,
+                                                            came in
+                                                            contact with good individuals, and along with that my every
+                                                            expectation of college life is
+                                                            answered.<span style="font-size: large;">&#8221;</span></p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">
+                                                            Mantra
+                                                            Sanathra
+                                                        </div>
+                                                        <small
+                                                            class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">Student</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4 ">
+                                                <div class="panel-item p-3">
+                                                    <div class="card-block">
+                                                        <div class="testimonial-photo">
+                                                            <img src="assets/images/senior.jpg">
+                                                        </div>
+                                                        <p class="mbr-text mbr-fonts-style display-8">
+                                                            <span style="font-size: large;">&#8220;</span>
+                                                            Stepping out form the protected environment and studying far
+                                                            away
+                                                            from home was a
+                                                            challenge
+                                                            for
+                                                            me. But maybe my parent's decision of admitting me here at
+                                                            Harisaurabh Hostel was a
+                                                            blessing
+                                                            for
+                                                            me. Not only I secured my Academics but me being able with a
+                                                            healthy
+                                                            attitude and just
+                                                            cultural
+                                                            and moral values is possible because of the environment here
+                                                            I
+                                                            perceived.
+                                                            <span style="font-size: large;">&#8221;</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">
+                                                            Axat Patel
+                                                        </div>
+                                                        <small
+                                                            class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">
+                                                            4th yr Student (BE IT, ADIT)
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="item">
+                                            <div
+                                                class="ct-sectionHeader ct-sectionHeader--type1 ct-u-marginBottom75 text-center">
+                                                <h3 class="ct-sectionHeader-title text-uppercase">Alumni's Reviews</h3>
+                                            </div>
+                                            <div
+                                                class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4 col-lg-offset-2">
+                                                <div class="panel-item p-3">
+                                                    <div class="card-block">
+                                                        <div class="testimonial-photo">
+                                                            <img src="assets/images/alumni2.jpeg">
+                                                        </div>
+                                                        <p class="mbr-text mbr-fonts-style display-8">
+                                                            <span style="font-size: large;">&#8220;</span>
+                                                            Frankly, it wasn't my initial choice but was more of a
+                                                            dad's.
+                                                            But till date, if I miss anything in about my entire
+                                                            academic life
+                                                            is staying at AVD.
+                                                            The atmosphere made an impact which I realized later when I
+                                                            cracked
+                                                            CAT.
+                                                            So much attention was paid to me. And damn that breakfast!
+                                                            Class-apart!
+                                                            I didn't make friends instead came out with a family.
+                                                            The guidance provided by Anand Sagar Swamiji and Gurus'
+                                                            talks enabled a life-altering experience at AVD<span
+                                                                style="font-size: large;">&#8221;</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">
+                                                            Naitik Joshi
+                                                        </div>
+                                                        <small
+                                                            class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">
+                                                            Buisness Analyst, American Express
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                                                <div class="panel-item p-3">
+                                                    <div class="card-block">
+                                                        <div class="testimonial-photo">
+                                                            <img src="assets/images/alumni1.jpeg" alt="" title="">
+                                                        </div>
+                                                        <p class="mbr-text mbr-fonts-style display-8">
+                                                            <span style="font-size: large;">&#8220;</span>
+                                                            Apart from the amazing infrastructure and facilities, I
+                                                            experienced
+                                                            real contentment and
+                                                            positivity inside the AVD campus. AVD gave me an
+                                                            environment, rather
+                                                            a platform to excel
+                                                            in my life. I met many intellectuals here who were always on
+                                                            foot to
+                                                            help me in any of my
+                                                            falls and I really appreciate the people who nurtured such
+                                                            humane
+                                                            soules. Here, I met my
+                                                            Guru mentors who always encouraged and assisted me for my
+                                                            Masters's
+                                                            entrance which are the
+                                                            key acumens making me to NIT Warangal.<span
+                                                                style="font-size: large;">&#8221;</span></p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">
+                                                            Zeel
+                                                            Bhojani
+                                                        </div>
+                                                        <small
+                                                            class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">R&D
+                                                            Joint
+                                                            Replacement, Stryker
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="item">
+                                            <div
+                                                class="ct-sectionHeader ct-sectionHeader--type1 ct-u-marginBottom75 text-center">
+                                                <h3 class="ct-sectionHeader-title text-uppercase">Parent's Reviews</h3>
+                                            </div>
+                                            <div
+                                                class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4 col-lg-offset-2">
+                                                <div class="panel-item p-3">
+                                                    <div class="card-block">
+                                                        <div class="testimonial-photo">
+                                                            <img src="assets/images/parent2.jpeg">
+                                                        </div>
+                                                        <p class="mbr-text mbr-fonts-style display-8">
+                                                            <span style="font-size: large;">&#8220;</span>
+                                                            Good and clean place, healthy food, good roommates, and the
+                                                            best
+                                                            environment to study is
+                                                            all
+                                                            we
+                                                            were seeking, and I can say being a father that AVD is the
+                                                            best
+                                                            hostel for my son. I was
+                                                            never
+                                                            tensed for his studies and values as here he gained the best
+                                                            moral
+                                                            and cultural values
+                                                            along
+                                                            with blessings of soundest saints.
+                                                            <span style="font-size: large;">&#8221;</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">
+                                                            Dipak Gor
+                                                        </div>
+                                                        <small
+                                                            class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">
+                                                            F/O Smit Gor
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                                                <div class="panel-item p-3">
+                                                    <div class="card-block">
+                                                        <div class="testimonial-photo">
+                                                            <img src="assets/images/parent1.jpeg">
+                                                        </div>
+                                                        <p class="mbr-text mbr-fonts-style display-8">
+                                                            <span style="font-size: large;">&#8220;</span>
+                                                            It is just we can't believe that a boy who never peeped out
+                                                            of books
+                                                            is now participating
+                                                            in
+                                                            various cultural and stage events. A totally new boy is he
+                                                            today who
+                                                            not only has
+                                                            habituated
+                                                            good qualities but also learned the true way of living a
+                                                            good life.
+                                                            Also, the people here
+                                                            are
+                                                            like family to us who always beckons us to participate in
+                                                            any of
+                                                            their programs.
+                                                            <span style="font-size: large;">&#8221;</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="mbr-author-name mbr-bold mbr-fonts-style display-8">
+                                                            Hiten Sanathra
+                                                        </div>
+                                                        <small
+                                                            class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-8">
+                                                            F/O Mantra Sanathra
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myreview" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myreview" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                    </section>
+                </center>
+            </section>
+            <footer id="section9" class="ct-footer section" data-background="#f6f6f6">
+                <div>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <div data-background="#ffffff" data-height="380"
+                                    class=" ct-u-positionRelative ct-u-paddingLeft50 ct-u-paddingRight50 contactForm contactForm--gray animated contactForm--type2"
+                                    data-fx="fadeInUpBig">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div
+                                                class="ct-sectionHeader ct-sectionHeader--type4 text-center ct-u-paddingTop30 ct-u-marginBottom50">
+                                                <h2 class="ct-sectionHeader-title text-uppercase">enquiry Form</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="form-group ct-input--icon">
+                                                <input type="text" id="firstName" class="form-control input-lg"
+                                                    name="name" placeholder="First Name" required />
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="form-group ct-input--icon">
+                                                <input type="text" id="middleName" class="form-control input-lg"
+                                                    name="name" placeholder="Middle Name" required />
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="form-group ct-input--icon">
+                                                <input type="text" id="lastName" class="form-control input-lg"
+                                                    name="name" placeholder="Last Name" required />
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="form-group ct-input--icon">
+                                                <input type="tel" id="contact_no" class="form-control input-lg"
+                                                    name="contact_no" placeholder="Contact No." required />
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="form-group ct-input--icon">
+                                                <input type="tel" id="father_contact" class="form-control input-lg"
+                                                    name="father_contact" placeholder="Father's Contact No." required />
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="form-group ct-input--icon">
+                                                <input type="text" id="city" class="form-control input-lg" name="name"
+                                                    placeholder="City / Village" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="form-group ct-input--icon">
+                                                <input type="text" id="district" class="form-control input-lg"
+                                                    name="name" placeholder="District" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="form-group ct-input--icon">
+                                                <input type="text" id="state" class="form-control input-lg" name="name"
+                                                    placeholder="State" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button onclick="enquiry_form()" type="submit"
+                                                class="btn btn-primary ct-u-marginTop20 ct-u-marginBottom50">
+                                                Send now
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p id="successMessage" style="color: green">Enquiry Form Successfully
+                                                Submitted . We
+                                                Will Contact You Soon</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <section class="cid-s13HQcPzGJ" id="footer2-3" style="background-color:#363636;">
+                        <div class="container">
+                            <div class=" media-container-row content">
+                                <div class="col-12 col-md-3 col-md-offset-1 mbr-fonts-style display-7">
+                                    <h6 class="mbr-text ct-u-paddingTop25" style="color: aliceblue;">
+                                        <strong><span class="fa fa-map-marker" style="color:#f77345"></span>
+                                            Address</strong>
+                                    </h6>
+                                    <p style="color: aliceblue;">
+                                        Atmiya Vidhya Dham, Atmiya Marg,
+                                        Near Vidyanagar Dist., Bakrol Rd,
+                                        Vallabh Vidyanagar, Bakrol, Gujarat 388120
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 mbr-fonts-style display-7">
+                                    <h6 class="mbr-text ct-u-paddingTop25" style="color: aliceblue;">
+                                        <strong><span class="fa fa-list" style="color: #f77345;"></span>
+                                            Contacts</strong>
+                                    </h6>
+                                    <p style="color: aliceblue;">
+                                        <span class="fa fa-envelope" style="color: #f77345;"></span> <a
+                                            href="mailto:harisaurabh.hostel@gmail.com">harisaurabh.hostel@gmail.com</a>
+                                        <br><span class="fa fa-phone" style="color: #f77345;"></span> Sharadbhai: <a
+                                            href="tel:+919712977261" active>+91 97129 77261</a>
+                                        <br><span class="fa fa-phone" style="color: #f77345;"></span> Vinitbhai Patel:
+                                        <a href="tel:+919925004164" active>+91 99250 04164
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="google-map ct-u-paddingBoth25">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14738.464935607119!2d72.9184809!3d22.5560443!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8afc77ec630f362f!2sHari%20Saurabh%20Hostel%20(%20For%20Boys%20Only%20)%20AVD!5e0!3m2!1sen!2sin!4v1591378802990!5m2!1sen!2sin"
+                                            width="350" height="200" frameborder="0" style="border:0;"
+                                            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-lower">
+                                <div class="media-container-row">
+                                    <div class="col-sm-12">
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="media-container-row mbr-white">
+                                    <div class="col-sm-6 copyright">
+                                        <p class="mbr-text mbr-fonts-style display-7" style="color: aliceblue;">
+                                            © Copyright
+                                            <script>
+                                                document.write(new Date().getFullYear());
+                                            </script>
+                                            Hari Saurabh Hostel - All Rights Reserved
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </footer>
+    </div>
+    <!-- Page Wrapper [end] -->
+
+    <!-- JavaScripts -->
+    <script src="assets/js/external.min.js"></script>
+
+    <!-- Main js file -->
+    <script src="assets/js/main.js"></script>
+
+    <!--Firebase-->
+    <script src="assets/form/js/enquiry-form.js"></script>
+
+    <!-- Onepager -->
+    <script src="assets/js/onepager/jquery.pagescroller.lite.js"></script>
+    <script src="assets/js/onepager/init.js"></script>
+
+    <!-- Slick -->
+    <script src="assets/js/slick/js/slick.js"></script>
+    <script src="assets/js/slick/js/init.js"></script>
+
+    <!-- Portfolio -->
+    <script src="assets/js/portfolio/jquery.isotope.min.js"></script>
+    <script src="assets/js/portfolio/imagesloaded.js"></script>
+    <script src="assets/js/portfolio/init.js"></script>
+
+    <!-- Media Section -->
+    <script src="assets/js/ct-mediaSection/js/smoothScroll.js"></script>
+    <script src="assets/js/ct-mediaSection/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/ct-mediaSection/js/media-section.js"></script>
+
+    <!-- Selectize -->
+    <script src="assets/js/selectize/selectize.min.js"></script>
+
+    <!-- Date time picker -->
+    <script src="assets/js/datetime-picker/datetime-picker.min.js"></script>
+    <script src="assets/js/datetime-picker/init.js"></script>
+
+    <!-- Topbar and Navbar effects -->
+    <script src="assets/js/headroom/headroom.js"></script>
+    <script src="assets/js/headroom/jQuery.headroom.js"></script>
+    <script src="assets/js/headroom/init.js"></script>
+
+    <!-- Magnific popup gallery -->
+    <script src="assets/js/magnificpopup/magnificpopup.min.js"></script>
+    <script src="assets/js/magnificpopup/init.js"></script>
 
 
 </body>

@@ -45,9 +45,10 @@ function enquiry_form() {
     auth.signInAnonymously().then(d => {
         return db.collection('enquiry').add(obj).then(d => {
             successMessageElement.style.setProperty('display', 'block');
+            document.getElementById("section9").reset();
         });
     }).catch(err => {
         console.log(err);
         flag = true;
-    })
+    })    
 }
