@@ -6199,9 +6199,9 @@ nav.navbar ul.nav.navbar-nav > li.dropdown > .dropdown-menu > li.dropdown-submen
 }
 nav.navbar ul.nav.navbar-nav > li.dropdown > .dropdown-menu > li.dropdown-submenu > a:after {
   content: '\e800';
-  position: fixed;
+  position: absolute;
   font-family: 'fontello';
-  right: 5px;
+  right: 10px;
   top: 50%;
   margin-top: -6px;
 }
