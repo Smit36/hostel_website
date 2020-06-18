@@ -1,0 +1,9 @@
+dispatch:
+  - url: "api.hsh.avdvvn.org/*"
+    service: hshapi
+  - url: "dashboard.avdvvn.org/*"
+    service: dashboard
+  - url: "renewal.avdvvn.org/*"
+    service: default
+  - url: "www.avdvvn.org/*"
+    service: main-site
