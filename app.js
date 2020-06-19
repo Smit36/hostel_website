@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((req, res) => {
-    res.sendFile(path.join(__dirname, 'hostel_website', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });// 404 not found
 
 app.listen(8080, () => {
