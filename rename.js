@@ -14,3 +14,5 @@ async function rename(oldFile, newFile) {
         });
     })
 }
+
+
