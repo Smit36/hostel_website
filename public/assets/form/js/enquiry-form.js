@@ -44,14 +44,14 @@ function enquiry_form() {
     flag = false;
     auth.signInAnonymously().then(d => {
         return db.collection('enquiry').add(obj).then(d => {
-            document.getElementById("firstName").requestFullscreen();
-            document.getElementById("middleName").requestFullscreen();
-            document.getElementById("middleName").requestFullscreen();
-            document.getElementById("contact_no").requestFullscreen();
-            document.getElementById("father_contact").requestFullscreen();
-            document.getElementById("city").requestFullscreen();
-            document.getElementById("district").requestFullscreen();
-            document.getElementById("state").requestFullscreen();
+            document.getElementById("firstName").reset();
+            document.getElementById("middleName").reset();
+            document.getElementById("middleName").reset();
+            document.getElementById("contact_no").reset();
+            document.getElementById("father_contact").reset();
+            document.getElementById("city").reset();
+            document.getElementById("district").reset();
+            document.getElementById("state").reset();
             successMessageElement.style.setProperty('display', 'block');            
         });
     }).catch(err => {
