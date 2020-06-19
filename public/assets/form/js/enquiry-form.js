@@ -30,7 +30,8 @@ function enquiry_form() {
         father_contact: document.getElementById("father_contact").value,
         city: document.getElementById("city").value,
         district: document.getElementById("district").value,
-        state: document.getElementById("state").value,
+        state: document.getElementById("state").value,        
+        reference: document.getElementById("reference").value,
     };
 
 
