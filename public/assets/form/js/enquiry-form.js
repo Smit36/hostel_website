@@ -31,7 +31,7 @@ function enquiry_form() {
     }
 
     if(firstName_value<1){
-        $(firstNameMessageElement).fadeIn('slow');
+        $(firstNameElement).fadeIn('slow');
     }
 
     let obj = {
