@@ -109,7 +109,7 @@ function enquiry_form() {
     firstName: firstName_value,
     middleName: middleName_value,
     lastName: lastName_value,
-    contact_no: conatact_no_value,
+    contact_no: contact_no_value,
     father_contact: father_contact_value,
     city: city_value,
     district: district_value,
