@@ -14,7 +14,7 @@ const auth = f.auth();
 
 const successMessageElement = document.getElementById('successMessage');
 successMessageElement.style.setProperty('display', 'none');
-const anyReference=document.getElementById("reference").value;
+var anyReference=document.getElementById("reference").value;
 
 let flag = true;
 
