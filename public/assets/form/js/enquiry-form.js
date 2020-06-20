@@ -54,7 +54,7 @@ function enquiry_form() {
             document.getElementById("district").value="";
             document.getElementById("state").value="";
             document.getElementById("reference").value="";
-            successMessageElement.style.setProperty('display', 'block');            
+            $(successMessageElement).fadeIn('fast').delay(3000).fadeOut('fast');  
         });
     }).catch(err => {
         console.log(err);
