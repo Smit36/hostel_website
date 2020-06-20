@@ -25,7 +25,7 @@ function enquiry_form() {
     let obj = {
         firstName: document.getElementById("firstName").value,
         middleName: document.getElementById("middleName").value,
-        lastName: document.getElementById("middleName").value,
+        lastName: document.getElementById("lastName").value,
         contact_no: document.getElementById("contact_no").value,
         father_contact: document.getElementById("father_contact").value,
         city: document.getElementById("city").value,
@@ -45,14 +45,15 @@ function enquiry_form() {
     flag = false;
     auth.signInAnonymously().then(d => {
         return db.collection('enquiry').add(obj).then(d => {
-            document.getElementById("firstName").reset();
-            document.getElementById("middleName").reset();
-            document.getElementById("middleName").reset();
-            document.getElementById("contact_no").reset();
-            document.getElementById("father_contact").reset();
-            document.getElementById("city").reset();
-            document.getElementById("district").reset();
-            document.getElementById("state").reset();
+            document.getElementById("firstName").value="";
+            document.getElementById("middleName").value="";
+            document.getElementById("lastName").value="";
+            document.getElementById("contact_no").value="";
+            document.getElementById("father_contact").value="";
+            document.getElementById("city").value="";
+            document.getElementById("district").value="";
+            document.getElementById("state").value="";
+            document.getElementById("reference").value="";
             successMessageElement.style.setProperty('display', 'block');            
         });
     }).catch(err => {
