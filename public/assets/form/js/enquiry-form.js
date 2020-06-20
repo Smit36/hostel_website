@@ -57,8 +57,8 @@ function enquiry_form() {
     return;
   }
 
-  if (anyReference.length < 1) {
-    anyReference = 'None';
+  if (reference_value.length < 1) {
+    reference_value = 'None';
   }
 
   if (firstName_value < 1) {
