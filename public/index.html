@@ -1306,9 +1306,11 @@
                                             <div class="form-group ct-input--icon">
                                                 <input style="color: #1b1b1b;" type="text" id="firstName"
                                                     class="form-control input-lg" name="name" placeholder="First Name*"
-                                                    required />
+                                                    onchange="handleFirstName()" required />
                                                 <i class="fa fa-user"></i>
                                             </div>
+                                            <span id="firstNameMessage" style="color: red">Please fill out this
+                                                field.</span>
                                         </div>
                                         <div class="col-sm-10 col-sm-offset-1">
                                             <div class="form-group ct-input--icon">
@@ -1505,6 +1507,8 @@
     <!-- Magnific popup gallery -->
     <script src="assets/js/magnificpopup/magnificpopup.min.js"></script>
     <script src="assets/js/magnificpopup/init.js"></script>
+
+    
 
 
 </body>

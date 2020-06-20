@@ -14,9 +14,18 @@ const auth = f.auth();
 
 const successMessageElement = document.getElementById('successMessage');
 successMessageElement.style.setProperty('display', 'none');
+const firstNameElement = document.getElementById('firstNameMessage');
+firstNameElement.style.setProperty('display', 'none');
 var anyReference=document.getElementById("reference").value;
+var firstName_value=document.getElementById("firstName").value;
 
 let flag = true;
+
+function handleFirstName(){
+        if(firstName_value<1){
+            $(firstNameMessageElement).fadeIn('slow');
+        }
+}
 
 function enquiry_form() {
 
