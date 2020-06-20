@@ -132,6 +132,7 @@ function enquiry_form() {
     $(waitMessageElement).fadeIn('slow').delay(500).fadeIn('slow');
     auth.signInAnonymously().then(async (d) => {
         return db.collection('enquiry').doc(contact_no_value).set(obj).then((d) => {
+            flag=true;
             document.getElementById('firstName').value = '';
             document.getElementById('middleName').value = '';
             document.getElementById('lastName').value = '';
