@@ -20,13 +20,6 @@ var anyReference=document.getElementById("reference").value;
 var firstName_value=document.getElementById("firstName").value;
 
 let flag = true;
-
-function handleFirstName(){
-        if(firstName_value<1){
-            $(firstNameMessageElement).fadeIn('slow');
-        }
-}
-
 function enquiry_form() {
 
     if (!flag) {
@@ -36,6 +29,11 @@ function enquiry_form() {
     if(anyReference.length<1){
         anyReference="None";
     }
+
+    if(firstName_value<1){
+        $(firstNameMessageElement).fadeIn('slow');
+    }
+
     let obj = {
         firstName: document.getElementById("firstName").value,
         middleName: document.getElementById("middleName").value,
