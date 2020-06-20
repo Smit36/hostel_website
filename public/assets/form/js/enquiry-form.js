@@ -14,6 +14,7 @@ const auth = f.auth();
 
 const successMessageElement = document.getElementById('successMessage');
 successMessageElement.style.setProperty('display', 'none');
+const anyReference=document.getElementById("reference").value;
 
 let flag = true;
 
@@ -22,8 +23,8 @@ function enquiry_form() {
     if (!flag) {
         return;
     }
-    const anyReference=document.getElementById("reference").value;
-    if(anyReference.length<=0){
+    
+    if(anyReference.length<1){
         anyReference="None";
     }
     let obj = {
