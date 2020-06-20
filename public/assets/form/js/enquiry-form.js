@@ -22,6 +22,10 @@ function enquiry_form() {
     if (!flag) {
         return;
     }
+    const anyReference=document.getElementById("reference").value;
+    if(anyReference.length<=0){
+        anyReference="None";
+    }
     let obj = {
         firstName: document.getElementById("firstName").value,
         middleName: document.getElementById("middleName").value,
@@ -31,7 +35,7 @@ function enquiry_form() {
         city: document.getElementById("city").value,
         district: document.getElementById("district").value,
         state: document.getElementById("state").value,        
-        reference: document.getElementById("reference").value,
+        reference: anyReference,
     };
 
 
@@ -54,7 +58,7 @@ function enquiry_form() {
             document.getElementById("district").value="";
             document.getElementById("state").value="";
             document.getElementById("reference").value="";
-            $(successMessageElement).fadeIn('fast').delay(3000).fadeOut('fast');  
+            $(successMessageElement).fadeIn('slow').delay(5000).fadeOut('slow');  
         });
     }).catch(err => {
         console.log(err);
