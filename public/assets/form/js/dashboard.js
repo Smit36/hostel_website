@@ -10,6 +10,8 @@ const firebaseConfig = {
 };
 const f = firebase.initializeApp(firebaseConfig);
 const db = f.firestore();
+const auth = f.auth();
+
 var i = 0;
 document.getElementById('user_div').style.display = 'none';
 document.getElementById('login_div').style.display = 'block';
@@ -54,7 +56,7 @@ db.collection('enquiry')
           state +
           '</td><td>' +
           reference +
-          '</td></tr>',
+          '</td><td><button id='+contact_no+' name='+firstName+' onclick="remove(this.id,this.name)">Remove</button></td></tr>',
       );
     });
   });
@@ -70,4 +72,14 @@ function login() {
   } else {
     alert('Please use correct username & password.');
   }
+}
+
+function remove(remove_id,remove_name){
+  auth.signInAnonymously().then(async (d) => {
+    return db.collection('enquiry').doc(remove_id).delete().then((d) => {
+       alert(remove_name+' removed.')
+    });
+}).catch((err) => {
+    console.log(err);
+});
 }
