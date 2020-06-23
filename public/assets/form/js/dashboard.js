@@ -37,7 +37,9 @@ db.collection('enquiry').onSnapshot((snapshot) => {
       }
 
       $('#enquiry_table').append(
-        '<tr><td>' +
+        '<tr id=' +
+          contact_no +
+          '><td>' +
           i +
           '</td><td>' +
           firstName +
@@ -63,9 +65,8 @@ db.collection('enquiry').onSnapshot((snapshot) => {
           firstName +
           ' onclick="remove(this.id,this.name)">Remove</button></td></tr>',
       );
-    }
-    else if(change.type=='removed'){
-      document.getElementById(change.doc.id).remove();  
+    } else if (change.type == 'removed') {
+      document.getElementById(change.doc.id).remove();
     }
   });
 });
