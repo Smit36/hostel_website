@@ -16,23 +16,23 @@ var i = 0;
 document.getElementById('user_div').style.display = 'none';
 document.getElementById('login_div').style.display = 'block';
 
-db.collection('enquiry')
-  .get()
-  .then((snapshot) => {
-    snapshot.docs.forEach((doc) => {
+db.collection('enquiry').onSnapshot((snapshot) => {
+  let changes = snapshot.docChanges();
+  changes.forEach((change) => {
+    if (change.type == 'added') {
       i++;
-      var firstName = doc.data().firstName;
-      var middleName = doc.data().middleName;
-      var lastName = doc.data().lastName;
-      var contact_no = doc.data().contact_no;
-      var father_contact = doc.data().father_contact;
-      var city = doc.data().city;
-      var district = doc.data().district;
-      var state = doc.data().state;
-      var reference = doc.data().reference;
+      var firstName = change.doc.data().firstName;
+      var middleName = change.doc.data().middleName;
+      var lastName = change.doc.data().lastName;
+      var contact_no = change.doc.data().contact_no;
+      var father_contact = change.doc.data().father_contact;
+      var city = change.doc.data().city;
+      var district = change.doc.data().district;
+      var state = change.doc.data().state;
+      var reference = change.doc.data().reference;
 
-      if(reference==undefined){
-        reference="";
+      if (reference == undefined) {
+        reference = '';
       }
 
       $('#enquiry_table').append(
@@ -56,10 +56,18 @@ db.collection('enquiry')
           state +
           '</td><td>' +
           reference +
-          '</td><td><button id='+contact_no+' name='+firstName+' onclick="remove(this.id,this.name)">Remove</button></td></tr>',
+          '</td><td><button id=' +
+          contact_no +
+          ' name=' +
+          firstName +
+          ' onclick="remove(this.id,this.name)">Remove</button></td></tr>',
       );
-    });
+    }
+    else if(type=='removed'){
+      document.getElementById(change.doc.id).remove();  
+    }
   });
+});
 
 var userValue = 'hsh123';
 var password = 'hsh123@';
@@ -74,12 +82,19 @@ function login() {
   }
 }
 
-function remove(remove_id,remove_name){
-  auth.signInAnonymously().then(async (d) => {
-    return db.collection('enquiry').doc(remove_id).delete().then((d) => {
-       alert(remove_name+' removed.')
+function remove(remove_id, remove_name) {
+  auth
+    .signInAnonymously()
+    .then(async (d) => {
+      return db
+        .collection('enquiry')
+        .doc(remove_id)
+        .delete()
+        .then((d) => {
+          alert(remove_name + ' removed.');
+        });
+    })
+    .catch((err) => {
+      console.log(err);
     });
-}).catch((err) => {
-    console.log(err);
-});
 }
