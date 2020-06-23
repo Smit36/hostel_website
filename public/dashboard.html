@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid #aca9a9;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Dashboard</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Contact</td>
+        <td>Father's Contact</td>
+        <td>Location</td>
+        <td>Reference</td>
+      </tr>
+    </thead>
+    <tbody id='enquiry_table'></tbody>
+  </table>
+
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/form/js/dashboard.js"></script>
+</body>
+
+</html>
