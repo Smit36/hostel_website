@@ -20,6 +20,7 @@ db.collection('enquiry').onSnapshot((snapshot) => {
   let changes = snapshot.docChanges();
   changes.forEach((change) => {
     if (change.type == 'added') {
+      console.log(change.doc.data());
       i++;
       var firstName = change.doc.data().firstName;
       var middleName = change.doc.data().middleName;
@@ -63,7 +64,7 @@ db.collection('enquiry').onSnapshot((snapshot) => {
           ' onclick="remove(this.id,this.name)">Remove</button></td></tr>',
       );
     }
-    else if(type=='removed'){
+    else if(change.type=='removed'){
       document.getElementById(change.doc.id).remove();  
     }
   });
