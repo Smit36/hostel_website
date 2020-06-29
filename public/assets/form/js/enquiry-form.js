@@ -124,7 +124,7 @@ function enquiry_form() {
         district: district_value,
         state: state_value,
         enquiry_date:enquiry_date_value,
-        timestamp:timestamp_value,
+        timestamp:9999999999999-timestamp_value,
     };
 
     let keys = Object.keys(obj);
