@@ -12,6 +12,14 @@ const f = firebase.initializeApp(firebaseConfig);
 const db = f.firestore();
 const auth = f.auth();
 
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+enquiry_date_value = dd + '/' + mm + '/' + yyyy;
+var timestamp_value=today.valueOf();
+
 const successMessageElement = document.getElementById('successMessage');
 successMessageElement.style.setProperty('display', 'none');
 
@@ -115,6 +123,8 @@ function enquiry_form() {
         city: city_value,
         district: district_value,
         state: state_value,
+        enquiry_date:enquiry_date_value,
+        timestamp:timestamp_value,
     };
 
     let keys = Object.keys(obj);

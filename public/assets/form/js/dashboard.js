@@ -16,60 +16,64 @@ var i = 0;
 document.getElementById('user_div').style.display = 'none';
 document.getElementById('login_div').style.display = 'block';
 
-db.collection('enquiry').onSnapshot((snapshot) => {
-  let changes = snapshot.docChanges();
-  changes.forEach((change) => {
-    if (change.type == 'added') {
-      console.log(change.doc.data());
-      i++;
-      var firstName = change.doc.data().firstName;
-      var middleName = change.doc.data().middleName;
-      var lastName = change.doc.data().lastName;
-      var contact_no = change.doc.data().contact_no;
-      var father_contact = change.doc.data().father_contact;
-      var city = change.doc.data().city;
-      var district = change.doc.data().district;
-      var state = change.doc.data().state;
-      var reference = change.doc.data().reference;
+db.collection('enquiry')
+  .orderBy('timestamp')
+  .onSnapshot((snapshot) => {
+    let changes = snapshot.docChanges();
+    changes.forEach((change) => {
+      if (change.type == 'added') {
+        i++;
+        var firstName = change.doc.data().firstName;
+        var middleName = change.doc.data().middleName;
+        var lastName = change.doc.data().lastName;
+        var contact_no = change.doc.data().contact_no;
+        var father_contact = change.doc.data().father_contact;
+        var city = change.doc.data().city;
+        var district = change.doc.data().district;
+        var state = change.doc.data().state;
+        var reference = change.doc.data().reference;
+        var enquiry_date = change.doc.data().enquiry_date;
 
-      if (reference == undefined) {
-        reference = '';
+        if (reference == undefined) {
+          reference = '';
+        }
+
+        $('#enquiry_table').append(
+          '<tr id=' +
+            contact_no +
+            '><td>' +
+            i +
+            '</td><td>' +
+            firstName +
+            ' ' +
+            middleName +
+            ' ' +
+            lastName +
+            '</td><td>' +
+            contact_no +
+            '</td><td>' +
+            father_contact +
+            '</td><td>' +
+            city +
+            ',' +
+            district +
+            ',' +
+            state +
+            '</td><td>' +
+            reference +
+            '</td><td>' +
+            enquiry_date +
+            '</td><td><button id=' +
+            contact_no +
+            ' name=' +
+            firstName +
+            ' onclick="remove(this.id,this.name)">Remove</button></td></tr>',
+        );
+      } else if (change.type == 'removed') {
+        document.getElementById(change.doc.id).remove();
       }
-
-      $('#enquiry_table').append(
-        '<tr id=' +
-          contact_no +
-          '><td>' +
-          i +
-          '</td><td>' +
-          firstName +
-          ' ' +
-          middleName +
-          ' ' +
-          lastName +
-          '</td><td>' +
-          contact_no +
-          '</td><td>' +
-          father_contact +
-          '</td><td>' +
-          city +
-          ',' +
-          district +
-          ',' +
-          state +
-          '</td><td>' +
-          reference +
-          '</td><td><button id=' +
-          contact_no +
-          ' name=' +
-          firstName +
-          ' onclick="remove(this.id,this.name)">Remove</button></td></tr>',
-      );
-    } else if (change.type == 'removed') {
-      document.getElementById(change.doc.id).remove();
-    }
+    });
   });
-});
 
 var userValue = 'hsh123';
 var password = 'hsh123@';
